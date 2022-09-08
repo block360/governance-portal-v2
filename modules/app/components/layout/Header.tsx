@@ -115,14 +115,16 @@ const HeaderMenu = ({ onToggleTheme, mode, ...props }): JSX.Element => {
             <MenuItemContent icon="faq" label="FAQs" />
           </ExternalLink>
         </MenuItem>
-        <MenuItem
+        {/*
+        //@GSUpro hide dark mode selection
+         <MenuItem
           onSelect={onToggleTheme}
           sx={{
             variant: 'menubuttons.default.headerItem'
           }}
         >
           <MenuItemContent icon="color_mode_sun" label={`${mode === 'dark' ? 'Light' : 'Dark'} mode`} />
-        </MenuItem>
+        </MenuItem> */}
       </MenuList>
     </Menu>
   );

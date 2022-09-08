@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Link as ThemeUILink, ThemeUIStyleObject } from 'theme-ui';
+import { Link as ThemeUILink, ThemeUIStyleObject, LinkProps } from 'theme-ui';
 
 type Props = {
   children: JSX.Element;
@@ -9,7 +9,7 @@ type Props = {
   queryParams?: Record<string, string>;
   hash?: string;
   scroll?: boolean;
-};
+} & LinkProps;
 
 export const InternalLink = ({
   children,
@@ -18,10 +18,11 @@ export const InternalLink = ({
   styles,
   queryParams,
   hash,
-  scroll = true
+  scroll = true,
+  ...rest
 }: Props): JSX.Element => (
   <Link href={{ pathname: href, query: queryParams, hash }} scroll={scroll} passHref>
-    <ThemeUILink variant="nostyle" title={title} sx={{ ...styles }}>
+    <ThemeUILink variant="nostyle" title={title} sx={{ color: 'accentBlue', ...styles }} {...rest}>
       {children}
     </ThemeUILink>
   </Link>

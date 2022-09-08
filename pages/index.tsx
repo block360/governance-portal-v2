@@ -263,7 +263,7 @@ const LandingPage = ({ proposals, polls, delegates, stats, mkrOnHat, hat, mkrInC
               />
               <Box ref={learnRef} />
               <InformationParticipateMakerGovernance />
-              <ResourcesLanding />
+              {/* <ResourcesLanding /> */}
             </section>
 
             <section id="engage">

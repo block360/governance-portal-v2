@@ -1,5 +1,6 @@
-import { Box, Heading, Card, Link as ExternalLink, Flex, Text } from 'theme-ui';
+import { Box, Heading, Card, Flex, Text } from 'theme-ui';
 import { Icon } from '@makerdao/dai-ui-icons';
+import { InternalLink } from './InternalLink';
 
 type ResourceType = 'general' | 'polling' | 'executive' | 'delegates';
 
@@ -17,16 +18,16 @@ const resources: Record<ResourceType, Resource> = {
   general: {
     boxTitle: 'General Governance Resources',
     links: [
-      { linkTitle: 'Maker Forum', url: 'https://forum.makerdao.com/' },
-      { linkTitle: 'Governance FAQs', url: 'https://makerdao.world/learn/governance/governance-faq/' },
+      { linkTitle: 'Maker Forum', url: '/inprogress' },
+      { linkTitle: 'Governance FAQs', url: '/inprogress' },
       {
         linkTitle: 'Governance Risk Framework',
-        url: 'https://blog.makerdao.com/makerdao-governance-risk-framework/'
+        url: '/inprogress'
       },
-      { linkTitle: 'Awesome MakerDAO', url: 'https://github.com/makerdao/awesome-makerdao/' },
+      { linkTitle: 'Awesome MakerDAO', url: '/inprogress' },
       {
         linkTitle: 'Governance Call Schedule',
-        url: 'https://makerdao.world/resources/governance_and_risk_meetings/'
+        url: '/inprogress'
       }
     ]
   },
@@ -35,19 +36,19 @@ const resources: Record<ResourceType, Resource> = {
     links: [
       {
         linkTitle: 'How to participate in MakerDAO governance?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works/'
+        url: '/inprogress'
       },
       {
         linkTitle: 'What are Governance Polls?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works#governance-polls'
+        url: '/inprogress'
       },
       {
         linkTitle: 'How is voting weight calculated?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works#governance-polls-and-executive-votes'
+        url: '/inprogress'
       },
       {
         linkTitle: 'How to set up your wallet for voting?',
-        url: 'https://makerdao.world/en/learn/governance/voting-setup/'
+        url: '/inprogress'
       }
     ]
   },
@@ -56,23 +57,23 @@ const resources: Record<ResourceType, Resource> = {
     links: [
       {
         linkTitle: 'How to participate in MakerDAO governance?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works/'
+        url: '/inprogress'
       },
       {
         linkTitle: 'What are Executive Votes?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works#executive-votes'
+        url: '/inprogress'
       },
       {
         linkTitle: 'How to manually verify Executive Spells',
-        url: 'https://makerdao.world/en/learn/governance/audit-exec-spells'
+        url: '/inprogress'
       },
       {
         linkTitle: 'How is voting weight calculated?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works#governance-polls-and-executive-votes'
+        url: '/inprogress'
       },
       {
         linkTitle: 'How to set up your wallet for voting?',
-        url: 'https://makerdao.world/en/learn/governance/voting-setup/'
+        url: '/inprogress'
       }
     ]
   },
@@ -81,23 +82,23 @@ const resources: Record<ResourceType, Resource> = {
     links: [
       {
         linkTitle: 'What is vote delegation and how does it work in MakerDAO?',
-        url: 'https://forum.makerdao.com/t/delegation-and-makerdao/9429'
+        url: '/inprogress'
       },
       {
         linkTitle: 'What are the requirements for becoming a recognized delegate?',
-        url: 'https://forum.makerdao.com/t/recognised-delegate-requirements/9421'
+        url: '/inprogress'
       },
       {
         linkTitle: "The MKR holder's guide to delegation",
-        url: 'https://forum.makerdao.com/t/mkr-holder-s-guide-to-delegation/9602'
+        url: '/inprogress'
       },
       {
         linkTitle: "MKR token holder's delegation agreement",
-        url: 'https://forum.makerdao.com/t/token-holders-delegation-agreement/9385'
+        url: '/inprogress'
       },
       {
         linkTitle: 'Recognized delegate code of conduct',
-        url: 'https://forum.makerdao.com/t/recognised-delegate-code-of-conduct/9384'
+        url: '/inprogress'
       }
     ]
   }
@@ -118,12 +119,12 @@ export default function ResourceBox({
       <Card variant="compact">
         {resources[type].links.map(resource => (
           <Flex key={resource.linkTitle} sx={{ alignItems: 'center', ':not(:last-of-type)': { mb: 3 } }}>
-            <ExternalLink href={resource.url} target="_blank">
+            <InternalLink title="" href={resource.url} target="_blank">
               <Text sx={{ color: 'accentBlue', ':hover': { color: 'blueLinkHover' } }}>
                 {resource.linkTitle}
                 <Icon ml={2} name="arrowTopRight" size={2} />
               </Text>
-            </ExternalLink>
+            </InternalLink>
           </Flex>
         ))}
       </Card>

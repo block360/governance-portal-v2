@@ -4,6 +4,7 @@ import { ExternalLink } from 'modules/app/components/ExternalLink';
 import React from 'react';
 import { translate } from '@makerdao/i18n-helper';
 import { useBreakpointIndex } from '@theme-ui/match-media';
+import { InternalLink } from 'modules/app/components/InternalLink';
 
 const ContactSection = ({ heading, logos, icon }) => {
   return (
@@ -50,27 +51,27 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
       header: t('Governance'),
       list: [
         {
-          url: 'https://forum.makerdao.com/',
+          url: '/inprogress',
           title: t('Forum')
         },
         {
-          url: 'https://manual.makerdao.com/',
+          url: '/inprogress',
           title: t('Operational Manual')
         },
         {
-          url: 'https://makerdao.world/en/learn/governance/',
+          url: '/inprogress',
           title: t('Governance FAQs')
         },
         {
-          url: 'https://docs.google.com/spreadsheets/d/1LWNlv6hr8oXebk8rvXZBPRVDjN-3OrzI0IgLwBVk0vM/edit#gid=0',
+          url: '/inprogress',
           title: t('Gov Tracking Sheet')
         },
         {
-          url: 'https://manual.makerdao.com/governance/governance-cycle/monthly-governance-cycle',
+          url: '/inprogress',
           title: t('Monthly Gov Cycle')
         },
         {
-          url: 'https://manual.makerdao.com/governance/governance-cycle/weekly-governance-cycle',
+          url: '/inprogress',
           title: t('Weekly Gov Cycle')
         }
       ]
@@ -78,58 +79,59 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
     {
       header: t('Products & Tools'),
       list: [
-        {
-          url: 'https://makerdao.statuspage.io/',
-          title: t('Service Status')
-        },
+        // @remove product and tools link
+        // {
+        //   url: 'https://makerdao.statuspage.io/',
+        //   title: t('Service Status')
+        // },
 
         {
           url: 'https://auctions.makerdao.network/',
           title: t('Auctions Dashboard')
-        },
-        {
-          url: 'https://migrate.makerdao.com/',
-          title: t('Migrate Dashboard')
-        },
-        {
-          url: 'https://makerburn.com/',
-          title: t('MakerBurn')
-        },
-        {
-          url: 'https://daistats.com/',
-          title: t('DAI Stats')
-        },
-        {
-          url: 'https://vote.makerdao.com/terms',
-          title: t('Terms')
         }
+        // {
+        //   url: 'https://migrate.makerdao.com/',
+        //   title: t('Migrate Dashboard')
+        // },
+        // {
+        //   url: 'https://makerburn.com/',
+        //   title: t('MakerBurn')
+        // },
+        // {
+        //   url: 'https://daistats.com/',
+        //   title: t('DAI Stats')
+        // },
+        // {
+        //   url: 'https://vote.makerdao.com/terms',
+        //   title: t('Terms')
+        // }
       ]
     },
     {
       header: t('Developer'),
       list: [
-        {
-          url: 'https://makerdao.com/whitepaper',
-          title: t('Whitepaper')
-        },
-        {
-          url: 'https://docs.makerdao.com/',
-          title: t('Technical Docs')
-        },
+        // {
+        //   url: 'https://makerdao.com/whitepaper',
+        //   title: t('Whitepaper')
+        // },
+        // {
+        //   url: 'https://docs.makerdao.com/',
+        //   title: t('Technical Docs')
+        // },
         {
           url: 'https://vote.makerdao.com/api-docs',
           title: t('API Docs')
         },
+        // {
+        //   url: 'https://github.com/makerdao/developerguides',
+        //   title: t('Developer Guides')
+        // },
+        // {
+        //   url: 'https://www.notion.so/makerdao/Maker-Brand-ac517c82ff9a43089d0db5bb2ee045a4',
+        //   title: t('Brand Assets')
+        // },
         {
-          url: 'https://github.com/makerdao/developerguides',
-          title: t('Developer Guides')
-        },
-        {
-          url: 'https://www.notion.so/makerdao/Maker-Brand-ac517c82ff9a43089d0db5bb2ee045a4',
-          title: t('Brand Assets')
-        },
-        {
-          url: 'https://makerdao.com/en/feeds/',
+          url: 'https://gsucoin.app/en/feeds/',
           title: t('Oracle Feeds')
         }
       ]
@@ -138,18 +140,17 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
 
   const logos = {
     makerdao: [
-      { title: 'Discord', url: 'https://chat.makerdao.com', icon: 'discord' },
-      { title: 'Twitter', url: 'https://twitter.com/MakerDAO', icon: 'twitter' },
-      { title: 'Reddit', url: 'https://www.reddit.com/r/MakerDAO/', icon: 'reddit' },
-      { title: 'YouTube', url: 'https://www.youtube.com/MakerDAO', icon: 'youtube' },
-      { title: 'GitHub', url: 'https://www.github.com/makerdao', icon: 'github' }
+      { title: 'Discord', url: 'https://discord.com/invite/cm3tmM37W3', icon: 'discord' },
+      { title: 'Twitter', url: 'https://twitter.com/GSUcoin', icon: 'twitter' },
+      // { title: 'YouTube', url: 'https://www.youtube.com/MakerDAO', icon: 'youtube' },
+      { title: 'GitHub', url: 'https://github.com/gsu-protocol/governance-portal-v2', icon: 'github' }
     ],
     makerdux: [
-      { title: 'Discord', url: 'https://discord.gg/GHcFMdKden', icon: 'discord' },
-      { title: 'Twitter', url: 'https://twitter.com/MakerDUX', icon: 'twitter' },
-      { title: 'GitHub', url: 'https://github.com/makerdao/governance-portal-v2', icon: 'github' },
-      { title: 'Canny', url: 'https://makergovernance.canny.io/', icon: 'canny' },
-      { title: 'Immunefi', url: 'https://immunefi.com/bounty/makerdao/', icon: 'immunefi' }
+      { title: 'Discord', url: 'https://discord.com/invite/cm3tmM37W3', icon: 'discord' },
+      { title: 'Twitter', url: 'https://twitter.com/GSUcoin', icon: 'twitter' },
+      { title: 'GitHub', url: 'https://github.com/gsu-protocol/governance-portal-v2', icon: 'github' }
+      // { title: 'Canny', url: 'https://makergovernance.canny.io/', icon: 'canny' },
+      // { title: 'Immunifi', url: 'https://immunefi.com/bounty/makerdao/', icon: 'immunifi' }
     ]
   };
 
@@ -205,11 +206,19 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
                   {group.header}
                 </Text>
                 {group.list.map(({ url, title }) => {
-                  return (
-                    <ExternalLink key={title} href={url} title={title} styles={{ fontSize: [1, 2] }}>
-                      <Text sx={{ fontSize: 3, color: 'footerText' }}>{title}</Text>
-                    </ExternalLink>
-                  );
+                  if (url.includes('http')) {
+                    return (
+                      <ExternalLink key={title} href={url} title={title} styles={{ fontSize: [1, 2] }}>
+                        <Text sx={{ fontSize: 3, color: 'footerText' }}>{title}</Text>
+                      </ExternalLink>
+                    );
+                  } else {
+                    return (
+                      <InternalLink key={title} href={url} title={title} styles={{ fontSize: [1, 2] }}>
+                        <Text sx={{ fontSize: 3, color: 'footerText' }}>{title}</Text>
+                      </InternalLink>
+                    );
+                  }
                 })}
               </Flex>
             );

@@ -11,15 +11,16 @@ import SkeletonThemed from 'modules/app/components/SkeletonThemed';
 import { AllLocksResponse, ForumPost } from '../types/participation';
 import DelegateAvatarNameLight from 'modules/delegates/components/DelegateAvatarNameLight';
 import { ErrorBoundary } from 'modules/app/components/ErrorBoundary';
+import { GenericLink } from 'modules/app/components/GenericLink';
 
 const ForumPosts = ({ posts, bpi }: { posts: ForumPost[]; bpi: number }) => {
   return (
     <Flex sx={{ flexDirection: 'column', gap: 3 }}>
       <Flex sx={{ justifyContent: 'space-between' }}>
         <Heading>Browse the Governance Forum</Heading>
-        <ExternalLink href="https://forum.makerdao.com/" title="View Forum Posts" target="_blank">
+        <GenericLink url="/inprogress" title="View Forum Posts">
           <ViewMore label="View Forum" />
-        </ExternalLink>
+        </GenericLink>
       </Flex>
       <Flex sx={{ gap: 3, justifyContent: 'space-between', flexWrap: 'wrap' }}>
         {posts.map(({ title, image, summary, link }) => {
