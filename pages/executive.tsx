@@ -24,7 +24,6 @@ import SidebarLayout from 'modules/app/components/layout/layouts/Sidebar';
 import ProgressBar from 'modules/executive/components/ProgressBar';
 import PageLoadingPlaceholder from 'modules/app/components/PageLoadingPlaceholder';
 import { ExecutiveBalance } from 'modules/executive/components/ExecutiveBalance';
-import { ExternalLink } from 'modules/app/components/ExternalLink';
 import useUiFiltersStore from 'modules/app/stores/uiFilters';
 import { Proposal } from 'modules/executive/types';
 import { useAnalytics } from 'modules/app/client/analytics/useAnalytics';
@@ -43,6 +42,7 @@ import SkeletonThemed from 'modules/app/components/SkeletonThemed';
 import { SupportedNetworks } from 'modules/web3/constants/networks';
 import { ExecutivePageData, fetchExecutivePageData } from 'modules/executive/api/fetchExecutivePageData';
 import { InternalLink } from 'modules/app/components/InternalLink';
+import { GenericLink } from 'modules/app/components/GenericLink';
 
 const MigrationBadge = ({ children, py = [2, 3] }) => (
   <Badge
@@ -195,10 +195,7 @@ export const ExecutiveOverview = ({ proposals }: { proposals?: Proposal[] }): JS
               </Text>
               <Flex>
                 <WithdrawOldChief />
-                <ExternalLink
-                  href="https://forum.makerdao.com/t/dschief-v1-2-migration-steps/5412"
-                  title="View migration steps"
-                >
+                <GenericLink url="/inprogress" title="View migration steps">
                   <Button
                     variant="outline"
                     sx={{
@@ -223,7 +220,7 @@ export const ExecutiveOverview = ({ proposals }: { proposals?: Proposal[] }): JS
                       Forum Post <Icon name="arrowTopRight" size={2} ml={'1px'} color="accentBlue" />
                     </Text>
                   </Button>
-                </ExternalLink>
+                </GenericLink>
               </Flex>
             </Flex>
           </MigrationBadge>

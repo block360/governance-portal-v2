@@ -6,6 +6,7 @@ import CirclesBackground from '../CirclesBackground';
 import { InfoPoint, infoPoints } from './InfoPoints';
 import { useBreakpointIndex } from '@theme-ui/match-media';
 import { ViewMore } from '../ViewMore';
+import { InternalLink } from 'modules/app/components/InternalLink';
 
 function Card({
   infoPoint,
@@ -19,7 +20,7 @@ function Card({
       <Flex sx={{ height: '100%' }}>
         <Box sx={{ p: 3, display: ['none', 'block'] }}>
           <Heading as="h1" sx={{ fontSize: '32px' }}>
-            <Text sx={{ color: infoPoint.color }}>{infoPoint.number}</Text>
+            <Text sx={{ color: '#e5134e' }}>{infoPoint.number}</Text>
           </Heading>
         </Box>
         <Flex
@@ -35,11 +36,11 @@ function Card({
           <Box>
             <Flex sx={{ alignItems: 'center' }}>
               <Heading as="h1" sx={{ mb: 3, p: [3, 0], flex: 1 }}>
-                <Text as="p" sx={{ color: infoPoint.color, display: ['block', 'none'] }}>
+                <Text as="p" sx={{ color: '#e5134e', display: ['block', 'none'] }}>
                   {infoPoint.number}
                 </Text>
                 <Text>{infoPoint.titleFirst}</Text>
-                <Text sx={{ color: infoPoint.color, ml: 1 }}>{infoPoint.titleSecond}</Text>
+                <Text sx={{ color: '#e5134e', ml: 1 }}>{infoPoint.titleSecond}</Text>
               </Heading>
               {children}
             </Flex>
@@ -49,16 +50,29 @@ function Card({
           <Box>
             {infoPoint.links.map(link => (
               <Box mb={2} key={link.linkHref} sx={{ p: [3, 0] }}>
-                <ExternalLink
-                  href={link.linkHref}
-                  title={link.linkTitle}
-                  styles={{ color: 'inherit', fontWeight: 'semiBold' }}
-                >
-                  <Flex sx={{ alignItems: 'center' }}>
-                    <Text>{link.linkTitle}</Text>
-                    <Icon ml={2} name="arrowTopRight" size={3} sx={{ color: infoPoint.color }} />
-                  </Flex>
-                </ExternalLink>
+                {link.linkHref.includes('http') ? (
+                  <ExternalLink
+                    href={link.linkHref}
+                    title={link.linkTitle}
+                    styles={{ color: 'inherit', fontWeight: 'semiBold' }}
+                  >
+                    <Flex sx={{ alignItems: 'center' }}>
+                      <Text>{link.linkTitle}</Text>
+                      <Icon ml={2} name="arrowTopRight" size={3} sx={{ color: '#e5134e' }} />
+                    </Flex>
+                  </ExternalLink>
+                ) : (
+                  <InternalLink
+                    href={link.linkHref}
+                    title={link.linkTitle}
+                    styles={{ color: 'inherit', fontWeight: 'semiBold' }}
+                  >
+                    <Flex sx={{ alignItems: 'center' }}>
+                      <Text>{link.linkTitle}</Text>
+                      <Icon ml={2} name="arrowTopRight" size={3} sx={{ color: '#e5134e' }} />
+                    </Flex>
+                  </InternalLink>
+                )}
               </Box>
             ))}
           </Box>
@@ -81,13 +95,9 @@ export default function InformationParticipateMakerGovernance(): React.ReactElem
               <Heading as="h2">How to participate in Maker Governance</Heading>
             </Box>
             <Box>
-              <ExternalLink
-                href="https://manual.makerdao.com/"
-                title="Learn more"
-                styles={{ color: 'inherit' }}
-              >
+              <InternalLink href="/inprogress" title="Learn more" styles={{ color: 'inherit' }}>
                 <ViewMore label="Learn More" />
-              </ExternalLink>
+              </InternalLink>
             </Box>
           </Flex>
 
@@ -112,7 +122,7 @@ export default function InformationParticipateMakerGovernance(): React.ReactElem
                   <Box>
                     <Text
                       sx={{
-                        color: infoPoint.color,
+                        color: '#e5134e',
                         mr: 1
                       }}
                     >
@@ -120,7 +130,7 @@ export default function InformationParticipateMakerGovernance(): React.ReactElem
                     </Text>
                     <Text
                       sx={{
-                        color: active.number === infoPoint.number ? infoPoint.color : 'text',
+                        color: active.number === infoPoint.number ? '#e5134e' : 'text',
                         fontSize: 3,
                         fontWeight: 'semiBold'
                       }}
@@ -136,10 +146,11 @@ export default function InformationParticipateMakerGovernance(): React.ReactElem
                 borderRadius: 'medium',
                 backgroundColor: 'semiTransparentBackground',
                 width: ['100%', '70%'],
-                backgroundImage: [
-                  'none',
-                  'url(/home/understand-governance/00_visual_how_to_participate.png);'
-                ],
+                // GSUpro remove background
+                // backgroundImage: [
+                //   'none',
+                //   'url(/home/understand-governance/00_visual_how_to_participate.png);'
+                // ],
                 backgroundPosition: `100% -${indexCard * 430}px`,
                 backgroundSize: ['340px'],
                 backgroundRepeat: 'no-repeat',

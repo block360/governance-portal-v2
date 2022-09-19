@@ -115,14 +115,16 @@ const HeaderMenu = ({ onToggleTheme, mode, ...props }): JSX.Element => {
             <MenuItemContent icon="faq" label="FAQs" />
           </ExternalLink>
         </MenuItem>
-        <MenuItem
+        {/*
+        //@GSUpro hide dark mode selection
+         <MenuItem
           onSelect={onToggleTheme}
           sx={{
             variant: 'menubuttons.default.headerItem'
           }}
         >
           <MenuItemContent icon="color_mode_sun" label={`${mode === 'dark' ? 'Light' : 'Dark'} mode`} />
-        </MenuItem>
+        </MenuItem> */}
       </MenuList>
     </Menu>
   );
@@ -210,7 +212,9 @@ const Header = (): JSX.Element => {
               </NavLink>
             )}
           </Flex>
-          <Flex>
+          {/*
+          //@GSUpro removes executive
+           <Flex>
             <NavLink
               href={'/executive'}
               title="View executive page"
@@ -240,8 +244,12 @@ const Header = (): JSX.Element => {
               </NavLink>
             )}
           </Flex>
+           //@GSUpro removes executive end
+           */}
 
-          <NavLink
+          {/* 
+            //@GSUpro removes Delegates
+            <NavLink
             href={'/delegates'}
             title="View delegates page"
             p={0}
@@ -253,6 +261,8 @@ const Header = (): JSX.Element => {
           >
             Delegates
           </NavLink>
+            //@GSUpro removes Delegates end
+             */}
 
           <NavLink
             href={'/esmodule'}

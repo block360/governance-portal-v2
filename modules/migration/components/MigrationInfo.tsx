@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Flex, Text, Label, Checkbox, Button, Box } from 'theme-ui';
 import { CircleIcon } from 'modules/app/components/CircleIcon';
-import { ExternalLink } from 'modules/app/components/ExternalLink';
+import { InternalLink } from 'modules/app/components/InternalLink';
 
 export function MigrationInfo({
   setMigrationInfoAcknowledged
@@ -18,15 +18,11 @@ export function MigrationInfo({
       <Flex sx={{ flexDirection: 'column' }}>
         <Text as="p" variant="secondary">
           Maker delegate contracts are{' '}
-          <ExternalLink
-            href="https://manual.makerdao.com/delegation/delegate-expiration 
-"
-            title="Delegate expiration information"
-          >
+          <InternalLink href="/inprogress" title="Delegate expiration information">
             <Text variant="secondary" sx={{ color: 'accentBlue' }}>
               designed to expire annually
             </Text>
-          </ExternalLink>{' '}
+          </InternalLink>{' '}
           in order to protect the Maker protocol against stale MKR tokens participating in Maker governance.
         </Text>
 

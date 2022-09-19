@@ -104,8 +104,9 @@ export default function DelegateExpiryDate({
                   </InternalLink>{' '}
                   by undelegating from the expiring/expired contracts and redelegating to the new contracts.
                 </Text>
-                <ThemeUILink
-                  href={'https://manual.makerdao.com/delegation/delegate-expiration'}
+                <InternalLink
+                  title="Read More"
+                  href={'/inprogress'}
                   sx={{ mb: 3 }}
                   target="_blank"
                   rel="noreferrer"
@@ -114,7 +115,7 @@ export default function DelegateExpiryDate({
                     Read More
                     <Icon name="arrowTopRight" pt={2} color="accentBlue" />
                   </Text>
-                </ThemeUILink>
+                </InternalLink>
                 <Button
                   sx={{ borderColor: 'primary', width: '100%', color: 'primary' }}
                   variant="outline"

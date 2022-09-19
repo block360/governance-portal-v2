@@ -22,6 +22,7 @@ import { useCageTime } from 'modules/esm/hooks/useCageTime';
 import { useLockedMkr } from 'modules/mkr/hooks/useLockedMkr';
 import { ErrorBoundary } from 'modules/app/components/ErrorBoundary';
 import { ExternalLink } from 'modules/app/components/ExternalLink';
+import { InternalLink } from 'modules/app/components/InternalLink';
 
 const ESModule = (): React.ReactElement => {
   const loader = useRef<HTMLDivElement>(null);
@@ -190,12 +191,9 @@ const ESModule = (): React.ReactElement => {
           The ESM allows MKR holders to shutdown the system without a central authority. Once{' '}
           {thresholdAmount ? `${formatValue(thresholdAmount, 'wad', 0)}` : '---'} MKR are entered into the
           ESM, emergency shutdown can be executed.{' '}
-          <ExternalLink
-            href="https://docs.makerdao.com/smart-contract-modules/emergency-shutdown-module"
-            title="View emergency shutdown docs"
-          >
+          <InternalLink href="/inprogress" title="View emergency shutdown docs">
             <Text>Read the documentation here.</Text>
-          </ExternalLink>
+          </InternalLink>
         </Text>
       </Box>
       <Box sx={{ mt: 4 }}>

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Button, Box, Flex, Heading, Card, Text, Image } from 'theme-ui';
 import { resources, ResourceColor, ResourceCategory } from './resources';
-import { ExternalLink } from 'modules/app/components/ExternalLink';
 import { fadeIn } from 'lib/keyframes';
 import { alpha } from '@theme-ui/color';
+import { GenericLink } from 'modules/app/components/GenericLink';
 
 const CategoryButton = ({ label, color, active, onClick }) => {
   return (
@@ -93,7 +93,7 @@ export const ResourcesLanding = (): JSX.Element => {
           {resources
             .filter(resource => category === ResourceCategory.ALL_RESOURCES || category === resource.category)
             .map(resource => (
-              <ExternalLink href={resource.url} title={resource.title} key={resource.title}>
+              <GenericLink url={resource.url} title={resource.title}>
                 <Card
                   key={resource.title}
                   sx={{
@@ -156,7 +156,7 @@ export const ResourcesLanding = (): JSX.Element => {
                     {resource.summary}
                   </Text>
                 </Card>
-              </ExternalLink>
+              </GenericLink>
             ))}
         </Flex>
       </Flex>

@@ -23,24 +23,25 @@ export const infoPoints: InfoPoint[] = [
     titleSecond: 'off-chain governance',
     links: [
       {
-        linkHref: 'https://manual.makerdao.com/governance/voting-in-makerdao/off-chain-governance',
+        linkHref: '/inprogress',
         linkTitle: 'Learn more about off-chain governance'
       }
     ],
 
-    color: '#1AAB9B',
+    color: '#e94a7433',
     description:
       "Off-chain governance refers to processes for making decisions that don't require on-chain voting and gathering feedback prior to on-chain voting. Off-chain governance happens on the Maker Governance Forum, where the community meets to propose and discuss new proposals. Anyone can participate in off-chain governance."
   },
   {
     number: '02',
-    color: '#1ACCA7',
+    // @GSUpro update color
+    color: '#b3ca6533',
     title: 'Understand on-chain governance',
     titleFirst: 'Understand',
     titleSecond: 'on-chain governance',
     links: [
       {
-        linkHref: 'https://manual.makerdao.com/governance/voting-in-makerdao/on-chain-governance',
+        linkHref: '/inprogress',
         linkTitle: 'Learn more about on-chain governance'
       }
     ],
@@ -50,7 +51,8 @@ export const infoPoints: InfoPoint[] = [
   },
   {
     number: '03',
-    color: '#4B68FF',
+    // @GSUpro update color
+    color: '#b35fff33',
     title: 'Set up your voting wallet',
     titleFirst: 'Set up your',
     titleSecond: 'voting wallet',
@@ -61,18 +63,15 @@ export const infoPoints: InfoPoint[] = [
   },
   {
     number: '04',
-    color: '#9A4BFF',
+    // @GSUpro update color
+    color: '#b35fff40',
     title: 'Delegate your voting power',
     titleFirst: 'Option 1:',
     titleSecond: 'Delegate your voting power',
     links: [
       {
-        linkHref: 'https://manual.makerdao.com/delegation/delegate-expiration',
+        linkHref: '/inprogress',
         linkTitle: 'Learn more about delegation'
-      },
-      {
-        linkHref: 'https://vote.makerdao.com/delegates',
-        linkTitle: 'Choose a suitable delegate'
       }
     ],
 
@@ -81,7 +80,8 @@ export const infoPoints: InfoPoint[] = [
   },
   {
     number: '05',
-    color: '#E64BFF',
+    // @GSUpro update color
+    color: '#e94a7433',
     title: 'Vote manually',
     titleFirst: 'Option 2:',
     titleSecond: 'Vote manually',

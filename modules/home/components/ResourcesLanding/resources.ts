@@ -30,7 +30,7 @@ type LandingResource = {
 export const resources: LandingResource[] = [
   {
     title: 'Maker Governance Forum',
-    url: 'https://forum.makerdao.com/',
+    url: '/inprogress',
     category: ResourceCategory.GOVERNANCE,
     bg: ResourceBackground.GOVERNANCE,
     color: ResourceColor.GOVERNANCE,
@@ -40,7 +40,7 @@ export const resources: LandingResource[] = [
   },
   {
     title: 'Maker Operation Manual',
-    url: 'https://manual.makerdao.com',
+    url: '/inprogress',
     category: ResourceCategory.GOVERNANCE,
     bg: ResourceBackground.GOVERNANCE,
     color: ResourceColor.GOVERNANCE,
@@ -50,7 +50,7 @@ export const resources: LandingResource[] = [
   },
   {
     title: 'Governance Tracking Sheet',
-    url: 'https://docs.google.com/spreadsheets/d/1LWNlv6hr8oXebk8rvXZBPRVDjN-3OrzI0IgLwBVk0vM/edit#gid=0',
+    url: '/inprogress',
     category: ResourceCategory.GOVERNANCE,
     bg: ResourceBackground.GOVERNANCE,
     color: ResourceColor.GOVERNANCE,
@@ -60,7 +60,7 @@ export const resources: LandingResource[] = [
   },
   {
     title: 'Oasis',
-    url: 'https://oasis.app/',
+    url: 'https://gsucoin.app/',
     category: ResourceCategory.PRODUCTS_AND_TOOLS,
     bg: ResourceBackground.PRODUCTS_AND_TOOLS,
     color: ResourceColor.PRODUCTS_AND_TOOLS,
@@ -79,7 +79,7 @@ export const resources: LandingResource[] = [
   },
   {
     title: 'MakerBurn',
-    url: 'https://makerburn.com/#/',
+    url: '/inprogress',
     category: ResourceCategory.PRODUCTS_AND_TOOLS,
     bg: ResourceBackground.PRODUCTS_AND_TOOLS,
     color: ResourceColor.PRODUCTS_AND_TOOLS,
@@ -89,7 +89,7 @@ export const resources: LandingResource[] = [
   },
   {
     title: 'Technical Docs',
-    url: 'https://docs.makerdao.com/',
+    url: '/inprogress',
     category: ResourceCategory.DEVELOPERS,
     bg: ResourceBackground.DEVELOPERS,
     color: ResourceColor.DEVELOPERS,
