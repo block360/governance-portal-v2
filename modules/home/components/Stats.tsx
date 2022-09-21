@@ -1,5 +1,6 @@
 import { Flex, Grid, Box, Text, Link as ExternalLink, Heading } from 'theme-ui';
 import { ViewMore } from 'modules/home/components/ViewMore';
+import { GenericLink } from 'modules/app/components/GenericLink';
 
 type Props = {
   title: string;
@@ -17,9 +18,9 @@ export const Stats = ({ title, infoUnits, viewMoreUrl }: Props): JSX.Element => 
       <Box sx={{ display: ['none', 'block'] }}>
         <Flex sx={{ justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
           <Heading>{title}</Heading>
-          <ExternalLink href={viewMoreUrl} target="_blank">
+          <GenericLink url={viewMoreUrl} title="see more">
             <ViewMore />
-          </ExternalLink>
+          </GenericLink>
         </Flex>
 
         <Flex sx={{ mx: 0, px: 5, pb: 3, backgroundColor: 'background', borderRadius: 'small' }}>

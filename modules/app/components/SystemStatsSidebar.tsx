@@ -21,7 +21,7 @@ type StatField =
   | 'polling contract'
   | 'mkr needed to pass'
   | 'savings rate'
-  | 'total dai'
+  | 'total GSUc'
   | 'debt ceiling'
   | 'system surplus';
 
@@ -134,15 +134,15 @@ export default function SystemStatsSidebar({
       );
     },
 
-    'total dai': key => {
+    'total GSUc': key => {
       const { data: totalDai } = useTotalDai();
 
       return (
         <Flex key={key} sx={{ justifyContent: 'space-between', flexDirection: 'row' }}>
-          <Text sx={{ fontSize: 3, color: 'textSecondary' }}>Total Dai</Text>
+          <Text sx={{ fontSize: 3, color: 'textSecondary' }}>Total GSUc</Text>
           <Text variant="h2" sx={{ fontSize: 3 }}>
             {totalDai ? (
-              `${formatValue(totalDai, 'rad')} DAI`
+              `${formatValue(totalDai, 'rad')} GSUc`
             ) : (
               <Box sx={{ width: 6 }}>
                 <Skeleton />
@@ -158,10 +158,10 @@ export default function SystemStatsSidebar({
 
       return (
         <Flex key={key} sx={{ justifyContent: 'space-between', flexDirection: 'row' }}>
-          <Text sx={{ fontSize: 3, color: 'textSecondary' }}>Dai Debt Ceiling</Text>
+          <Text sx={{ fontSize: 3, color: 'textSecondary' }}>GSUc Debt Ceiling</Text>
           <Text variant="h2" sx={{ fontSize: 3 }}>
             {debtCeiling ? (
-              `${formatValue(debtCeiling, 'rad')} DAI`
+              `${formatValue(debtCeiling, 'rad')} GSUc`
             ) : (
               <Box sx={{ width: 6 }}>
                 <Skeleton />
@@ -180,7 +180,7 @@ export default function SystemStatsSidebar({
           <Text sx={{ fontSize: 3, color: 'textSecondary' }}>System Surplus</Text>
           <Text variant="h2" sx={{ fontSize: 3 }}>
             {systemSurplus ? (
-              `${formatValue(systemSurplus, 'rad')} DAI`
+              `${formatValue(systemSurplus, 'rad')} GSUc`
             ) : (
               <Box sx={{ width: 6 }}>
                 <Skeleton />
@@ -199,7 +199,7 @@ export default function SystemStatsSidebar({
           System Info
         </Heading>
         <ExternalLink
-          href="https://daistats.com/"
+          href="/inprogress"
           target="_blank"
           sx={{ color: 'accentBlue', fontSize: 3, ':hover': { color: 'blueLinkHover' } }}
         >

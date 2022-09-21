@@ -23,6 +23,7 @@ import { useLockedMkr } from 'modules/mkr/hooks/useLockedMkr';
 import { ErrorBoundary } from 'modules/app/components/ErrorBoundary';
 import { ExternalLink } from 'modules/app/components/ExternalLink';
 import { InternalLink } from 'modules/app/components/InternalLink';
+import { GenericLink } from 'modules/app/components/GenericLink';
 
 const ESModule = (): React.ReactElement => {
   const loader = useRef<HTMLDivElement>(null);
@@ -173,12 +174,9 @@ const ESModule = (): React.ReactElement => {
           <Text data-testid="es-initiated" sx={{ textAlign: 'center' }}>
             Emergency shutdown has been initiated on {formatDateWithTime(cageTime.toNumber())}. This dashboard
             is currently read-only. You can read more information about next steps{' '}
-            <ExternalLink
-              href="https://makerdao.world/en/learn/governance/emergency-shutdown"
-              title="Learn about emergency shutdown"
-            >
+            <GenericLink url="/inprogress" title="Learn about emergency shutdown">
               <Text>here</Text>
-            </ExternalLink>
+            </GenericLink>
             .
           </Text>
         </Flex>

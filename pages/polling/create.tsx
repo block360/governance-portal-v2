@@ -219,7 +219,7 @@ const PollingCreate = (): React.ReactElement => {
                   'mkr in chief',
                   'mkr needed to pass',
                   'savings rate',
-                  'total dai',
+                  'total GSUc',
                   'debt ceiling'
                 ]}
               />

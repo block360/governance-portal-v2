@@ -420,7 +420,7 @@ export const ExecutiveOverview = ({ proposals }: { proposals?: Proposal[] }): JS
                   'mkr in chief',
                   'mkr needed to pass',
                   'savings rate',
-                  'total dai',
+                  'total GSUc',
                   'debt ceiling'
                 ]}
               />

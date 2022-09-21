@@ -18,18 +18,18 @@ export function SystemStats(): JSX.Element {
       value: daiSavingsRate ? `${daiSavingsRate.toFixed(2)}%` : <Skeleton />
     },
     {
-      title: 'Total Dai',
-      value: totalDai ? `${formatValue(totalDai, 'rad')} DAI` : <Skeleton />
+      title: 'Total GSUc',
+      value: totalDai ? `${formatValue(totalDai, 'rad')} GSUc` : <Skeleton />
     },
     {
       title: 'Dai Debt Ceiling',
-      value: debtCeiling ? `${formatValue(debtCeiling, 'rad')} DAI` : <Skeleton />
+      value: debtCeiling ? `${formatValue(debtCeiling, 'rad')} GSUc` : <Skeleton />
     },
     {
       title: 'System Surplus',
-      value: systemSurplus ? `${formatValue(systemSurplus, 'rad')} DAI` : <Skeleton />
+      value: systemSurplus ? `${formatValue(systemSurplus, 'rad')} GSUc` : <Skeleton />
     }
   ];
 
-  return <Stats title="System Stats" infoUnits={infoUnits} viewMoreUrl="https://daistats.com/" />;
+  return <Stats title="System Stats" infoUnits={infoUnits} viewMoreUrl="/inprogress" />;
 }

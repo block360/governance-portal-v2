@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { Grid, Text, Box, Link as ExternalLink } from 'theme-ui';
 import BigNumber from 'lib/bigNumberJs';
-
+import { GenericLink } from 'modules/app/components/GenericLink';
 import Stack from 'modules/app/components/layout/layouts/Stack';
 import { SpellStateDiff } from '../types/spellStateDiff';
 import { formatAddress } from 'lib/utils';
@@ -17,9 +17,9 @@ const Header = ({ stateDiff }) => (
             ).toFormat()}. `
           : 'Simulated effects if this spell were to be executed now.'}
         Please check the{' '}
-        <ExternalLink target="_blank" href="https://docs.makerdao.com">
+        <GenericLink title="MCD Docs" url="https://docs.makerdao.com">
           MCD Docs
-        </ExternalLink>{' '}
+        </GenericLink>{' '}
         for definitions.{' '}
         <strong>NOTE: This currently shows only changes to the Vat and Jug contracts.</strong>
       </>

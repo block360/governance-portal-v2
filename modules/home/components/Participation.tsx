@@ -54,9 +54,9 @@ const ForumPosts = ({ posts, bpi }: { posts: ForumPost[]; bpi: number }) => {
                       {summary}
                     </Text>
                   </Flex>
-                  <ExternalLink href={link} title="View Forum Post" target="_blank">
+                  <GenericLink url={link} title="View Forum Post">
                     <ViewMore label="Read More" />
-                  </ExternalLink>
+                  </GenericLink>
                 </Flex>
               </Flex>
             </Card>
