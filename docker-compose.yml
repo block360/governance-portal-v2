@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  database:
+    container_name: vote_mongo
+    image: mongo:6.0
+    ports:
+      - 27017:27017
+#    environment:
+      # MONGO_INITDB_ROOT_USERNAME: root
+      # MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - vote_mongo_data:/data/db
+volumes:
+  vote_mongo_data:
+    driver: local
