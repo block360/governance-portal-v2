@@ -35,7 +35,7 @@ const resources: Record<ResourceType, Resource> = {
     boxTitle: 'Polling FAQs',
     links: [
       {
-        linkTitle: 'How to participate in MakerDAO governance?',
+        linkTitle: 'How to participate in GSU protocol governance?',
         url: '/inprogress'
       },
       {
@@ -56,7 +56,7 @@ const resources: Record<ResourceType, Resource> = {
     boxTitle: 'Executive Proposal FAQs',
     links: [
       {
-        linkTitle: 'How to participate in MakerDAO governance?',
+        linkTitle: 'How to participate in GSU protocol governance?',
         url: '/inprogress'
       },
       {
@@ -81,7 +81,7 @@ const resources: Record<ResourceType, Resource> = {
     boxTitle: 'Delegation FAQs',
     links: [
       {
-        linkTitle: 'What is vote delegation and how does it work in MakerDAO?',
+        linkTitle: 'What is vote delegation and how does it work in GSU protocol?',
         url: '/inprogress'
       },
       {
