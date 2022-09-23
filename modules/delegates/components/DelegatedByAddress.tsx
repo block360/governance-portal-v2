@@ -79,7 +79,7 @@ const CollapsableRow = ({ delegator, network, bpi, totalDelegated }: Collapsable
       </Flex>
       <Box as="td" sx={{ verticalAlign: 'top', pt: 2 }}>
         <Text sx={{ fontSize: [1, 3] }}>
-          {`${formatValue(parseUnits(lockAmount))}${bpi > 0 ? ' MKR' : ''}`}
+          {`${formatValue(parseUnits(lockAmount))}${bpi > 0 ? ' GSUp' : ''}`}
         </Text>
         {expanded && (
           <Flex sx={{ flexDirection: 'column' }}>
@@ -101,7 +101,7 @@ const CollapsableRow = ({ delegator, network, bpi, totalDelegated }: Collapsable
                   <Text key={blockTimestamp} variant="smallCaps" sx={{ pl: 2 }}>
                     {`${formatValue(
                       parseUnits(lockAmount.indexOf('-') === 0 ? lockAmount.substring(1) : lockAmount)
-                    )}${bpi > 0 ? ' MKR' : ''}`}
+                    )}${bpi > 0 ? ' GSUp' : ''}`}
                   </Text>
                 </Flex>
               );
@@ -176,7 +176,7 @@ const DelegatedByAddress = ({ delegators, totalDelegated }: DelegatedByAddressPr
   const { network } = useWeb3();
 
   const [sortBy, setSortBy] = useState({
-    type: 'mkr',
+    type: 'GSUp',
     order: 1
   });
 
@@ -196,7 +196,7 @@ const DelegatedByAddress = ({ delegators, totalDelegated }: DelegatedByAddressPr
 
   const sortedDelegators = useMemo(() => {
     switch (sortBy.type) {
-      case 'mkr':
+      case 'GSUp':
         return delegators?.sort((a, b) => {
           const aMKR = parseUnits(a.lockAmount);
           const bMKR = parseUnits(b.lockAmount);
@@ -226,7 +226,7 @@ const DelegatedByAddress = ({ delegators, totalDelegated }: DelegatedByAddressPr
           Delegators
         </Text>
         <Text as="p" variant="secondary" color="onSurface">
-          Addresses that have delegated MKR to this delegate
+          Addresses that have delegated GSUp to this delegate
         </Text>
       </Box>
       <table
@@ -258,10 +258,10 @@ const DelegatedByAddress = ({ delegators, totalDelegated }: DelegatedByAddressPr
               as="th"
               sx={{ cursor: 'pointer', textAlign: 'left', pb: 2, width: '30%' }}
               variant="caps"
-              onClick={() => changeSort('mkr')}
+              onClick={() => changeSort('GSUp')}
             >
-              {bpi < 1 ? 'MKR' : 'MKR Delegated'}
-              {sortBy.type === 'mkr' ? (
+              {bpi < 1 ? 'GSUp' : 'GSUp Delegated'}
+              {sortBy.type === 'GSUp' ? (
                 sortBy.order === 1 ? (
                   <Icon name="chevron_down" size={2} ml={1} />
                 ) : (
@@ -271,15 +271,15 @@ const DelegatedByAddress = ({ delegators, totalDelegated }: DelegatedByAddressPr
                 ''
               )}
             </Text>
-            <Tooltip label={'This is the percentage of the total MKR delegated to this delegate.'}>
+            <Tooltip label={'This is the percentage of the total GSUp delegated to this delegate.'}>
               <Text
                 as="th"
                 sx={{ cursor: 'pointer', textAlign: 'left', pb: 2, width: '20%' }}
                 variant="caps"
-                onClick={() => changeSort('mkr')}
+                onClick={() => changeSort('GSUp')}
               >
                 {bpi < 1 ? '%' : 'Voting Weight'}
-                {sortBy.type === 'mkr' ? (
+                {sortBy.type === 'GSUp' ? (
                   sortBy.order === 1 ? (
                     <Icon name="chevron_down" size={2} ml={1} />
                   ) : (

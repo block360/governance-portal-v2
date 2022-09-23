@@ -42,7 +42,7 @@ export const CoreUnitModal = ({ isOpen, onDismiss }: Props): JSX.Element => {
               Note: This delegate is also a Core Unit Member
             </Heading>
             <Text sx={{ mb: 3, color: 'onSecondary' }}>
-              Core Unit members are paid contributors to MakerDAO. When delegating your MKR to this delegate,
+              Core Unit members are paid contributors to MakerDAO. When delegating your GSUp to this delegate,
               please be conscious of the potential impact of these divergent incentives. GovAlpha generally
               advises against delegating to CU members.{' '}
             </Text>

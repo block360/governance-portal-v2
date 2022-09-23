@@ -30,7 +30,7 @@ export const infoPoints: InfoPoint[] = [
 
     color: '#e94a7433',
     description:
-      "Off-chain governance refers to processes for making decisions that don't require on-chain voting and gathering feedback prior to on-chain voting. Off-chain governance happens on the Maker Governance Forum, where the community meets to propose and discuss new proposals. Anyone can participate in off-chain governance."
+      "Off-chain governance refers to processes for making decisions that don't require on-chain voting and gathering feedback prior to on-chain voting. Off-chain governance happens on the GSU Protocol Governance Forum, where the community meets to propose and discuss new proposals. Anyone can participate in off-chain governance."
   },
   {
     number: '02',
@@ -47,7 +47,7 @@ export const infoPoints: InfoPoint[] = [
     ],
 
     description:
-      'On-chain governance refers to Governance Polls and Executive Votes, which are formalized governance proposals that require on-chain voting. Anyone who owns MKR tokens can participate in these votes using their wallet.'
+      'On-chain governance refers to Governance Polls and Executive Votes, which are formalized governance proposals that require on-chain voting. Anyone who owns GSUp tokens can participate in these votes using their wallet.'
   },
   {
     number: '03',
@@ -59,27 +59,27 @@ export const infoPoints: InfoPoint[] = [
     links: [],
 
     description:
-      'Connect a web3 wallet (eg. MetaMask, WalletConnect) that holds your MKR tokens and start participating! Users that hold many MKR tokens or use their wallet for other uses besides Maker governance might want to consider more secure methods of setting up a voting wallet, such as using a hardware wallet or setting up a vote proxy (available soon).'
+      'Connect a web3 wallet (eg. MetaMask, WalletConnect) that holds your GSUp tokens and start participating! Users that hold many GSUp tokens or use their wallet for other uses besides GSU protocol governance might want to consider more secure methods of setting up a voting wallet, such as using a hardware wallet or setting up a vote proxy (available soon).'
   },
+  // {
+  //   number: '04',
+  //   // @GSUpro update color
+  //   color: '#b35fff40',
+  //   title: 'Delegate your voting power',
+  //   titleFirst: 'Option 1:',
+  //   titleSecond: 'Delegate your voting power',
+  //   links: [
+  //     {
+  //       linkHref: '/inprogress',
+  //       linkTitle: 'Learn more about delegation'
+  //     }
+  //   ],
+
+  //   description:
+  //     "Vote delegation is a mechanism through which GSUp holders can entrust their voting power to one or more chosen delegates. These delegates can then vote using the GSUp delegated to them. Delegating your voting power is a good option if you're not willing to invest much time and gas costs in active participation. Note that delegates can never directly access the GSUp tokens delegated to them."
+  // },
   {
     number: '04',
-    // @GSUpro update color
-    color: '#b35fff40',
-    title: 'Delegate your voting power',
-    titleFirst: 'Option 1:',
-    titleSecond: 'Delegate your voting power',
-    links: [
-      {
-        linkHref: '/inprogress',
-        linkTitle: 'Learn more about delegation'
-      }
-    ],
-
-    description:
-      "Vote delegation is a mechanism through which MKR holders can entrust their voting power to one or more chosen delegates. These delegates can then vote using the MKR delegated to them. Delegating your voting power is a good option if you're not willing to invest much time and gas costs in active participation. Note that delegates can never directly access the MKR tokens delegated to them."
-  },
-  {
-    number: '05',
     // @GSUpro update color
     color: '#e94a7433',
     title: 'Vote manually',
@@ -87,20 +87,20 @@ export const infoPoints: InfoPoint[] = [
     titleSecond: 'Vote manually',
     links: [
       {
-        linkHref: 'https://vote.makerdao.com/polling',
+        linkHref: '/polling',
         linkTitle: 'Start voting on active governance polls'
       }
     ],
 
     description: (
       <Text>
-        If you prefer to participate in Maker governance manually instead of delegating, then you are able to
-        start participating once your voting wallet is set up.{' '}
+        If you prefer to participate in GSU protocol governance manually instead of delegating, then you are
+        able to start participating once your voting wallet is set up.{' '}
         <InternalLink href="/executive" title="Executives" styles={{ fontWeight: 'semiBold' }}>
           <Text>Find the latest Executive Proposal</Text>
         </InternalLink>{' '}
-        and vote on it by depositing your MKR tokens to the voting contract. By doing so you contribute to
-        protecting the protocol against governance attacks. You are able to withdraw your MKR tokens anytime.
+        and vote on it by depositing your GSUp tokens to the voting contract. By doing so you contribute to
+        protecting the protocol against governance attacks. You are able to withdraw your GSUp tokens anytime.
         Next,{' '}
         <InternalLink href="/polling" title="Polls" styles={{ fontWeight: 'semiBold' }}>
           <Text>start voting on the active governance polls</Text>

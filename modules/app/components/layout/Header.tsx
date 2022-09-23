@@ -169,8 +169,8 @@ const Header = (): JSX.Element => {
     >
       <Flex sx={{ flexDirection: 'row', alignItems: 'center' }}>
         <InternalLink href={'/'} title="View homepage">
-          <IconButton aria-label="Maker home" sx={{ width: '40px', height: 4, p: 0 }}>
-            <Icon name="maker" size="40px" color="ornament" sx={{ cursor: 'pointer' }} />
+          <IconButton aria-label="GSU protocol home" sx={{ width: '100px', height: 'auto', p: 0 }}>
+            <Icon name="maker" size="100px" color="ornament" sx={{ cursor: 'pointer' }} />
           </IconButton>
         </InternalLink>
         <Flex sx={{ ml: [0, 4, 4, 5] }}>
@@ -205,9 +205,7 @@ const Header = (): JSX.Element => {
               </NavLink>
             )}
           </Flex>
-          {/*
-          //@GSUpro removes executive
-           <Flex>
+          <Flex>
             <NavLink
               href={'/executive'}
               title="View executive page"
@@ -237,9 +235,6 @@ const Header = (): JSX.Element => {
               </NavLink>
             )}
           </Flex>
-           //@GSUpro removes executive end
-           */}
-
           {/* 
             //@GSUpro removes Delegates
             <NavLink
@@ -256,7 +251,6 @@ const Header = (): JSX.Element => {
           </NavLink>
             //@GSUpro removes Delegates end
              */}
-
           <NavLink
             href={'/esmodule'}
             title="View emergency shutdown module page"
@@ -354,8 +348,8 @@ const MobileMenu = ({ hide, router, gas, network }) => {
         }}
       >
         <InternalLink href={'/'} title="View homepage">
-          <IconButton aria-label="Maker home" sx={{ width: '40px', height: 4, p: 0 }}>
-            <Icon name="maker" size="40px" color="ornament" sx={{ cursor: 'pointer' }} />
+          <IconButton aria-label="GSU protocol home" sx={{ width: '100px', height: 'auto', p: 0 }}>
+            <Icon name="maker" size="100px" color="ornament" sx={{ cursor: 'pointer' }} />
           </IconButton>
         </InternalLink>
         <Flex sx={{ alignItems: 'center', gap: 2 }}>
@@ -389,12 +383,12 @@ const MobileMenu = ({ hide, router, gas, network }) => {
             <InternalLink title="View polling page" href="/polling">
               <Text sx={{ fontWeight: 'semiBold' }}>Polling</Text>
             </InternalLink>
-            {/* <InternalLink title="View executive page" href="/executive">
+            <InternalLink title="View executive page" href="/executive">
               <Text sx={{ fontWeight: 'semiBold' }}>Executive</Text>
             </InternalLink>
           </Flex>
           <Flex sx={{ flexDirection: 'column', alignItems: 'flex-start', gap: 3, width: '50%' }}>
-            <InternalLink title="View delegate page" href="/delegates">
+            {/* <InternalLink title="View delegate page" href="/delegates">
               <Text sx={{ fontWeight: 'semiBold' }}>Delegates</Text>
             </InternalLink> */}
             <InternalLink title="View emergency shutdown page" href="/esmodule">

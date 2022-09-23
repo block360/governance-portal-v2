@@ -14,7 +14,7 @@ export function SystemStats(): JSX.Element {
 
   const infoUnits = [
     {
-      title: 'Dai Savings Rate',
+      title: 'GSUc Savings Rate',
       value: daiSavingsRate ? `${daiSavingsRate.toFixed(2)}%` : <Skeleton />
     },
     {
@@ -22,7 +22,7 @@ export function SystemStats(): JSX.Element {
       value: totalDai ? `${formatValue(totalDai, 'rad')} GSUc` : <Skeleton />
     },
     {
-      title: 'Dai Debt Ceiling',
+      title: 'GSUc Debt Ceiling',
       value: debtCeiling ? `${formatValue(debtCeiling, 'rad')} GSUc` : <Skeleton />
     },
     {

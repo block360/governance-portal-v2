@@ -10,7 +10,10 @@ import round from 'lodash/round';
 import logger from './logger';
 
 export function bigNumberKFormat(num: CurrencyObject): string {
-  invariant(num && num.symbol && num.toBigNumber, 'bigNumberKFormat must recieve a maker currency object');
+  invariant(
+    num && num.symbol && num.toBigNumber,
+    'bigNumberKFormat must recieve a GSU protocol currency object'
+  );
   const units = ['K', 'M', 'B', 'T', 'P', 'E', 'Z', 'Y'];
   let typeIndex = Math.floor(num.div(10).toFixed(0).length / 3) - 1;
   typeIndex = typeIndex >= units.length ? 7 : typeIndex; // if the number out of range

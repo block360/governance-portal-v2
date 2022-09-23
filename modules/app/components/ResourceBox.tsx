@@ -18,13 +18,13 @@ const resources: Record<ResourceType, Resource> = {
   general: {
     boxTitle: 'General Governance Resources',
     links: [
-      { linkTitle: 'Maker Forum', url: '/inprogress' },
+      { linkTitle: 'GSU protocol Forum', url: '/inprogress' },
       { linkTitle: 'Governance FAQs', url: '/inprogress' },
       {
         linkTitle: 'Governance Risk Framework',
         url: '/inprogress'
       },
-      { linkTitle: 'Awesome MakerDAO', url: '/inprogress' },
+      { linkTitle: 'Awesome GSU protocol', url: '/inprogress' },
       {
         linkTitle: 'Governance Call Schedule',
         url: '/inprogress'
@@ -89,11 +89,11 @@ const resources: Record<ResourceType, Resource> = {
         url: '/inprogress'
       },
       {
-        linkTitle: "The MKR holder's guide to delegation",
+        linkTitle: "The GSUp holder's guide to delegation",
         url: '/inprogress'
       },
       {
-        linkTitle: "MKR token holder's delegation agreement",
+        linkTitle: "GSUp token holder's delegation agreement",
         url: '/inprogress'
       },
       {

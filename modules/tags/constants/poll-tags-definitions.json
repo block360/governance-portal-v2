@@ -178,7 +178,7 @@
     "longname": "DAI Direct Deposit Module",
     "recommend_ui": true,
     "description": "Polls relating to changes or onboarding of DAI Direct Deposit Modules",
-    "related_link":"/inprogress",
+    "related_link": "/inprogress",
     "precedence": 21
   },
   {
@@ -261,7 +261,7 @@
     "shortname": "Priority Sentiment",
     "longname": "Prioritization Sentiment",
     "recommend_ui": true,
-    "description": "Polls that seek input on prioritization sentiment from MKR holders",
+    "description": "Polls that seek input on prioritization sentiment from GSUp holders",
     "precedence": 31
   }
 ]

@@ -29,39 +29,39 @@ export function DelegatesSystemInfo({
       title: 'Total delegates',
       id: 'total-delegates-system-info',
       value: stats.total
-    },
-    {
-      title: 'Recognized delegates',
-      id: 'total-recognized-delegates-system-info',
-      value: stats.recognized
-    },
-    {
-      title: 'Shadow delegates',
-      id: 'total-shadow-delegates-system-info',
-      value: stats.shadow
-    },
-    {
-      title: 'Total MKR delegated',
-      id: 'total-mkr-system-info',
-      value: new BigNumber(stats.totalMKRDelegated).toFormat(0)
-    },
-    {
-      title: 'Percent of MKR delegated',
-      id: 'percent-mkr-system-info',
-      value: totalMkr ? (
-        `${new BigNumber(stats.totalMKRDelegated)
-          .dividedBy(new BigNumber(totalMkr._hex).div(BigNumberWAD))
-          .multipliedBy(100)
-          .toFormat(2)}%`
-      ) : (
-        <SkeletonThemed width={'100px'} height={'15px'} />
-      )
-    },
-    {
-      title: 'Total Delegators',
-      id: 'total-delegators-system-info',
-      value: stats.totalDelegators
     }
+    // {
+    //   title: 'Recognized delegates',
+    //   id: 'total-recognized-delegates-system-info',
+    //   value: stats.recognized
+    // },
+    // {
+    //   title: 'Shadow delegates',
+    //   id: 'total-shadow-delegates-system-info',
+    //   value: stats.shadow
+    // },
+    // {
+    //   title: 'Total GSUp delegated',
+    //   id: 'total-mkr-system-info',
+    //   value: new BigNumber(stats.totalMKRDelegated).toFormat(0)
+    // },
+    // {
+    //   title: 'Percent of GSUp delegated',
+    //   id: 'percent-mkr-system-info',
+    //   value: totalMkr ? (
+    //     `${new BigNumber(stats.totalMKRDelegated)
+    //       .dividedBy(new BigNumber(totalMkr._hex).div(BigNumberWAD))
+    //       .multipliedBy(100)
+    //       .toFormat(2)}%`
+    //   ) : (
+    //     <SkeletonThemed width={'100px'} height={'15px'} />
+    //   )
+    // },
+    // {
+    //   title: 'Total Delegators',
+    //   id: 'total-delegators-system-info',
+    //   value: stats.totalDelegators
+    // }
   ];
 
   return (

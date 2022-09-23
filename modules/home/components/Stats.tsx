@@ -24,7 +24,7 @@ export const Stats = ({ title, infoUnits, viewMoreUrl }: Props): JSX.Element => 
         </Flex>
 
         <Flex sx={{ mx: 0, px: 5, pb: 3, backgroundColor: 'background', borderRadius: 'small' }}>
-          <Flex m={3} sx={{ width: '100%', justifyContent: 'space-between' }}>
+          <Flex m={3} sx={{ width: '100%', justifyContent: 'space-around' }}>
             {infoUnits.map(unit => (
               <Box key={unit.title} data-testid={unit.title}>
                 <Box>
@@ -42,7 +42,7 @@ export const Stats = ({ title, infoUnits, viewMoreUrl }: Props): JSX.Element => 
       {/* Mobile */}
       <Box sx={{ display: ['block', 'none'], backgroundColor: 'background' }}>
         <Grid sx={{ p: 0 }}>
-          <Flex sx={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+          <Flex sx={{ flexDirection: 'row', justifyContent: 'space-around' }}>
             <Heading>{title}</Heading>
             <ExternalLink href={viewMoreUrl} target="_blank">
               <ViewMore />

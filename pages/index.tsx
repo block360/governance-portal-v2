@@ -113,15 +113,17 @@ const LandingPage = ({ proposals, polls, delegates, stats, mkrOnHat, hat, mkrInC
   });
 
   useEffect(() => {
-    if (learnInview) {
-      setActiveTab('#learn');
-    } else if (voteInview) {
+    // if (learnInview) {
+    //   setActiveTab('#learn');
+    // } else
+    if (voteInview) {
       setActiveTab('#vote');
     } else if (engageInview) {
       setActiveTab('#engage');
-    } else if (delegateInview) {
-      setActiveTab('#delegate');
     }
+    //  else if (delegateInview) {
+    //   setActiveTab('#delegate');
+    // }
   }, [learnInview, voteInview, engageInview, delegateInview]);
 
   const hashChangeHandler = useCallback(() => {
@@ -161,13 +163,13 @@ const LandingPage = ({ proposals, polls, delegates, stats, mkrOnHat, hat, mkrInC
               <Flex sx={{ flexDirection: ['column', 'column', 'row'], justifyContent: 'space-between' }}>
                 <Flex sx={{ p: 3, width: ['100%', '100%', '50%'], flexDirection: 'column' }}>
                   <Heading as="h1" sx={{ color: 'text', fontSize: [7, 8] }}>
-                    Maker Governance
+                    GSU Protocol Governance
                   </Heading>
                   <Heading as="h1" sx={{ color: 'text', fontSize: [7, 8] }}>
                     Voting Portal
                   </Heading>
                   <Text as="p" sx={{ fontWeight: 'semiBold', my: 3, width: ['100%', '100%', '80%'] }}>
-                    Vote with or delegate your MKR tokens to help protect the integrity of the Maker protocol
+                    Vote with or delegate your GSUp tokens to help protect the integrity of the GSU protocol
                   </Text>
                   <Box>
                     <PlayButton
@@ -234,19 +236,19 @@ const LandingPage = ({ proposals, polls, delegates, stats, mkrOnHat, hat, mkrInC
               <PollCategoriesLanding pollCategories={pollCategories} />
             </section>
 
-            <section id="delegate">
+            {/* <section id="delegate">
               <Box ref={delegateRef} />
               <ErrorBoundary componentName="Meet Delegates">
                 <MeetDelegates delegates={meetYourDelegates} bpi={bpi} />
               </ErrorBoundary>
-            </section>
+            </section> */}
 
-            <section>
+            {/* <section>
               <TopDelegates
                 delegates={topDelegates}
                 totalMKRDelegated={new BigNumber(stats?.totalMKRDelegated || 0)}
               />
-            </section>
+            </section> */}
 
             <section sx={{ position: 'relative', overflowY: 'clip' }} id="learn">
               <Box
@@ -263,7 +265,7 @@ const LandingPage = ({ proposals, polls, delegates, stats, mkrOnHat, hat, mkrInC
               />
               <Box ref={learnRef} />
               <InformationParticipateMakerGovernance />
-              {/* <ResourcesLanding /> */}
+              <ResourcesLanding />
             </section>
 
             <section id="engage">

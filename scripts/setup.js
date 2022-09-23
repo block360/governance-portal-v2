@@ -45,7 +45,7 @@ async function main() {
     await mkrToken.transfer(keyPairs.addresses[i], ethers.utils.parseEther('0.01'));
   }
 
-  console.log('All addresses have now 0.01 MKR');
+  console.log('All addresses have now 0.01 GSUp');
 
   //manipulate mkr contract, give test address 250K MKR
   //https://kndrck.co/posts/local_erc20_bal_mani_w_hh/
