@@ -2,15 +2,15 @@
 
 <p><a  href="https://vote.makerdao.com/"><img  alt="maker logo"  src="./maker-logo.png"  alt="vote.makerdao.com"  width="125"></a></p>
 
-<p>Maker Governance Portal</p>
+<p>GSU protocol Governance Portal</p>
 
 </h1>
 
-This is the repo containing the code for the [Maker Governance Portal](https://vote.makerdao.com). The Maker Governance Portal is an open-source interface for governance of the Maker protocol.
+This is the repo containing the code for the [GSU protocol Governance Portal](https://vote.makerdao.com). The GSU protocol Governance Portal is an open-source interface for governance of the GSU protocol protocol.
 
 ### To run locally:
 
-While the portal is hosted by MakerDAO at https://vote.makerdao.com, it can also be run by anyone on their local machine.
+While the portal is hosted by GSU protocol at https://vote.makerdao.com, it can also be run by anyone on their local machine.
 
 In order to run the project locally, you must have the following installed on the machine:
 
@@ -61,15 +61,15 @@ At this point, you should be able to access the application by going to the addr
 
 ### Releasing
 
-To do releases of the governance portal, please use `npm version minor`  or `npm version patch` to bump the version in the package.json and create a tag. 
+To do releases of the governance portal, please use `npm version minor` or `npm version patch` to bump the version in the package.json and create a tag.
 
-The tag and versioning should be done on develop, and then merged to master through a PR.  To push your local tag use the command `git push origin develop --follow-tags`.
+The tag and versioning should be done on develop, and then merged to master through a PR. To push your local tag use the command `git push origin develop --follow-tags`.
 
 ### Additional configuration overview:
 
 #### Content
 
-The portal seeks to rely on on-chain data as much as possible and to minimize reliance on data stored on centralized servers. However, due to the large volume of data that is relevant to Maker governance, fetching this data from on-chain is both time and resource-intensive. In order to improve the user's experience, some reliance on third-party services has been added, and we recommend a few configuration steps for optimal use. These services include:
+The portal seeks to rely on on-chain data as much as possible and to minimize reliance on data stored on centralized servers. However, due to the large volume of data that is relevant to GSU protocol governance, fetching this data from on-chain is both time and resource-intensive. In order to improve the user's experience, some reliance on third-party services has been added, and we recommend a few configuration steps for optimal use. These services include:
 
 - [GitHub](https://github.com/makerdao/community/tree/master/governance) for storing markdown related to [polls](https://github.com/makerdao/community/tree/master/governance/polls), [executives](https://github.com/makerdao/community/tree/master/governance/votes), and [recognized delegates](https://github.com/makerdao/community/tree/master/governance/delegates)
 - MongoDB for storing comments related to votes on polls and executives

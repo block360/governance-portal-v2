@@ -31,24 +31,24 @@ describe('Esmodule Page', async () => {
     const newAccount = getTestAccountByIndex(2);
 
     setAccount(newAccount, () => {
-      cy.contains('Burn Your MKR').should('be.visible');
+      cy.contains('Burn Your GSUp').should('be.visible');
 
-      // Click "burn your MKR button"
-      cy.contains('Burn Your MKR').click();
+      // Click "burn your GSUp button"
+      cy.contains('Burn Your GSUp').click();
 
       // Checks the modal is open
-      cy.contains('Are you sure you want to burn MKR?').should('be.visible');
+      cy.contains('Are you sure you want to burn GSUp?').should('be.visible');
 
       // Closes modal
       cy.contains('Cancel').click();
 
-      // Click "burn your MKR button"
-      cy.contains('Burn Your MKR').click();
+      // Click "burn your GSUp button"
+      cy.contains('Burn Your GSUp').click();
 
       // Click continue
       cy.contains('Continue').click();
 
-      // Enter 0.01 MKR
+      // Enter 0.01 GSUp
       cy.get('[data-testid="mkr-input"]').type('0.01');
 
       // Continue with the burn
@@ -56,12 +56,12 @@ describe('Esmodule Page', async () => {
 
       // Check that the passphrase form appears
       // TODO: This should render more than 2 decimals
-      // cy.contains('I am burning 0.01 MKR').should('be.visible');
+      // cy.contains('I am burning 0.01 GSUp').should('be.visible');
 
       // Type the passphrase
-      cy.get('[data-testid="confirm-input"]').type('I am burning 0.01 MKR');
+      cy.get('[data-testid="confirm-input"]').type('I am burning 0.01 GSUp');
 
-      // Unlock mkr
+      // Unlock GSUp
       cy.get('[data-testid="allowance-toggle"]').click();
 
       // click on checkbox of accepted terms
@@ -78,7 +78,7 @@ describe('Esmodule Page', async () => {
       //cy.contains('Transaction Pending').should('be.visible');
 
       // See confirmation
-      cy.contains('MKR successfully burned in ESM').should('be.visible');
+      cy.contains('GSUp successfully burned in ESM').should('be.visible');
 
       // Close modal
       cy.contains('Close').click();
@@ -97,33 +97,33 @@ describe('Esmodule Page', async () => {
     visitPage('/esmodule');
     cy.wait(2000);
     setAccount(TEST_ACCOUNTS.normal, () => {
-      cy.contains('Burn Your MKR').should('be.visible');
+      cy.contains('Burn Your GSUp').should('be.visible');
 
-      //Click "burn your MKR button"
-      cy.contains('Burn Your MKR').click();
+      //Click "burn your GSUp button"
+      cy.contains('Burn Your GSUp').click();
 
       // Checks the modal is open
-      cy.contains('Are you sure you want to burn MKR?').should('be.visible');
+      cy.contains('Are you sure you want to burn GSUp?').should('be.visible');
 
       // Closes modal
       cy.contains('Cancel').click();
 
-      // Click "burn your MKR button"
-      cy.contains('Burn Your MKR').click();
+      // Click "burn your GSUp button"
+      cy.contains('Burn Your GSUp').click();
 
       // Click continue
       cy.contains('Continue').click();
 
-      // Enter 100K MKR to pass the threshhold
+      // Enter 100K GSUp to pass the threshhold
       cy.get('[data-testid="mkr-input"]').type('100000');
 
       // Continue with the burn
       cy.contains('Continue').click();
 
       // Type the passphrase
-      cy.get('[data-testid="confirm-input"]').type('I am burning 100,000 MKR');
+      cy.get('[data-testid="confirm-input"]').type('I am burning 100,000 GSUp');
 
-      // Unlock mkr
+      // Unlock GSUp
       cy.get('[data-testid="allowance-toggle"]').click();
 
       // click on checkbox of accepted terms
@@ -136,16 +136,16 @@ describe('Esmodule Page', async () => {
       cy.get('[data-testid="continue-burn"]').click();
 
       // See confirmation
-      cy.contains('MKR successfully burned in ESM').should('be.visible');
+      cy.contains('GSUp successfully burned in ESM').should('be.visible');
 
       // Close modal
       cy.contains('Close').click();
 
-      // Click "burn your MKR button"
+      // Click "burn your GSUp button"
       cy.contains('Initiate Emergency Shutdown').click();
 
       // See that the limit has been reached
-      cy.contains('The 100,000 MKR limit for the emergency shutdown module has been reached.').should(
+      cy.contains('The 100,000 GSUp limit for the emergency shutdown module has been reached.').should(
         'be.visible'
       );
 
@@ -228,7 +228,7 @@ describe('/esmodule page', () => {
       expect(title).toBeInTheDocument();
     });
 
-    test('show "Burn your MKR" button', async () => {
+    test('show "Burn your GSUp" button', async () => {
       renderWithTheme(<ESModule />);
 
       const buttonBurn = await screen.findByText('Burn Your MKR', {}, { timeout: 15000 });

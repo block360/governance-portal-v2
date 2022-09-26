@@ -2,7 +2,7 @@ import { ParsedSpockVote } from 'modules/polling/types/tallyVotes';
 import { extractWinnerMajority } from '../majority';
 
 describe('Majority calculation', () => {
-  it('returns the option with more MKR', () => {
+  it('returns the option with more GSUp', () => {
     const votes: ParsedSpockVote[] = [
       {
         mkrSupport: 10,

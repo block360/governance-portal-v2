@@ -115,7 +115,7 @@ describe('Fetch tally approval', () => {
     expect(JSON.parse(JSON.stringify(result))).toEqual(expectedResult);
   });
 
-  it('gives no option as winner if both have the same MKR voting weight', async () => {
+  it('gives no option as winner if both have the same GSUp voting weight', async () => {
     (gqlRequest as jest.Mock).mockResolvedValueOnce({
       voteMkrWeightsAtTimeRankedChoice: {
         nodes: [

@@ -54,9 +54,9 @@ const ForumPosts = ({ posts, bpi }: { posts: ForumPost[]; bpi: number }) => {
                       {summary}
                     </Text>
                   </Flex>
-                  <ExternalLink href={link} title="View Forum Post" target="_blank">
+                  <GenericLink url={link} title="View Forum Post">
                     <ViewMore label="Read More" />
-                  </ExternalLink>
+                  </GenericLink>
                 </Flex>
               </Flex>
             </Card>
@@ -90,7 +90,7 @@ export default function Participation({
         <Stack gap={2}>
           <Heading as="h2">Follow the Conversation and Participate</Heading>
           <Text as="p" sx={{ color: 'textSecondary', px: 'inherit', fontSize: [2, 4] }}>
-            Engage with the Maker Community and make informed decisions.
+            Engage with the GSU protocol Community and make informed decisions.
           </Text>
         </Stack>
       </Container>

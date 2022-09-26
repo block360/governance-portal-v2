@@ -69,16 +69,6 @@ const AccountPage = (): React.ReactElement => {
             </Heading>
           </Box>
           <Box>
-            {addressInfo && (
-              <Box>
-                {addressInfo.delegateInfo && (
-                  <Box>
-                    <DelegateDetail delegate={addressInfo.delegateInfo} />
-                  </Box>
-                )}
-                {!addressInfo.delegateInfo && <AddressDetail addressInfo={addressInfo} />}
-              </Box>
-            )}
             {account && !addressInfo && !errorLoadingAddressInfo && (
               <Box sx={{ my: 3 }}>
                 <SkeletonThemed height={100} width="100%" />
@@ -94,13 +84,13 @@ const AccountPage = (): React.ReactElement => {
             </Box>
           ) : (
             <Box sx={{ mt: 4 }}>
-              <Box sx={{ my: 3 }}>
-                <Heading as="h3" variant="microHeading">
+              {/* <Box sx={{ my: 3 }}> */}
+              {/* <Heading as="h3" variant="microHeading">
                   Vote Delegation
                 </Heading>
-              </Box>
-              <Card>
-                {voteDelegateContractAddress && !modalOpen && (
+          </Box>*/}
+              {/* <Card> */}
+              {/* {voteDelegateContractAddress && !modalOpen && (
                   <Box sx={{ mb: 2 }}>
                     <Label>Your delegate contract address:</Label>
                     <ExternalLink
@@ -113,8 +103,8 @@ const AccountPage = (): React.ReactElement => {
                       </Text>
                     </ExternalLink>
                   </Box>
-                )}
-                {newOwnerConnected && previousOwnerContractAddress && (
+                )} */}
+              {/* {newOwnerConnected && previousOwnerContractAddress && (
                   <Box sx={{ mb: 2 }}>
                     <Label>Previous delegate contract address:</Label>
                     <ExternalLink
@@ -129,8 +119,8 @@ const AccountPage = (): React.ReactElement => {
                       </Text>
                     </ExternalLink>
                   </Box>
-                )}
-                {voteDelegateContractAddress && !modalOpen && (
+                )} */}
+              {/* {voteDelegateContractAddress && !modalOpen && (
                   <Box sx={{ mb: 2 }}>
                     <Label>FAQ</Label>
                     <ExternalLink
@@ -144,8 +134,8 @@ const AccountPage = (): React.ReactElement => {
                       </Text>
                     </ExternalLink>
                   </Box>
-                )}
-                {!voteDelegateContractAddress && (
+                )} */}
+              {/* {!voteDelegateContractAddress && (
                   <Box>
                     <Label>
                       {newOwnerConnected && !newOwnerHasDelegateContract
@@ -219,43 +209,43 @@ const AccountPage = (): React.ReactElement => {
                       Create delegate contract
                     </Button>
                   </Box>
-                )}
-                {chiefBalance?.gt(0) && (
+                )} */}
+              {/* {chiefBalance?.gt(0) && (
                   <Flex sx={{ alignItems: 'flex-start', flexDirection: 'column', mt: 5 }}>
                     <Text as="p">
                       You have a DSChief balance of{' '}
-                      <Text sx={{ fontWeight: 'bold' }}>{formatValue(chiefBalance, 'wad', 6)} MKR.</Text>
+                      <Text sx={{ fontWeight: 'bold' }}>{formatValue(chiefBalance, 'wad', 6)} GSUp.</Text>
                       <Text as="p" sx={{ my: 2 }}>
                         {voteDelegateContractAddress
-                          ? 'As a delegate you can only vote with your delegate contract through the portal. You can withdraw your MKR and delegate it to yourself to vote with it.'
-                          : 'If you become a delegate, you will only be able to vote through the portal as a delegate. In this case, it is recommended to withdraw your MKR and delegate it to yourself or create the delegate contract from a different account.'}
+                          ? 'As a delegate you can only vote with your delegate contract through the portal. You can withdraw your GSUp and delegate it to yourself to vote with it.'
+                          : 'If you become a delegate, you will only be able to vote through the portal as a delegate. In this case, it is recommended to withdraw your GSUp and delegate it to yourself or create the delegate contract from a different account.'}
                       </Text>
                     </Text>
                     <Withdraw sx={{ mt: 3 }} />
                   </Flex>
-                )}
-              </Card>
+                )} */}
+              {/* </Card> */}
             </Box>
           )}
         </Box>
         <Stack gap={3}>
-          {addressInfo && addressInfo.delegateInfo && (
+          {/* {addressInfo && addressInfo.delegateInfo && (
             <Box>
-              <ErrorBoundary componentName="Delegate MKR">
+              <ErrorBoundary componentName="Delegate GSUp">
                 <ManageDelegation
                   delegate={addressInfo.delegateInfo}
-                  textDelegate="Delegate MKR to myself"
-                  textUndelegate="Undelegate MKR from my contract"
+                  textDelegate="Delegate GSUp to myself"
+                  textUndelegate="Undelegate GSUp from my contract"
                 />
               </ErrorBoundary>
             </Box>
-          )}
+          )} */}
           <ErrorBoundary componentName="System Info">
             <SystemStatsSidebar
-              fields={['polling contract', 'savings rate', 'total dai', 'debt ceiling', 'system surplus']}
+              fields={['polling contract', 'savings rate', 'total GSUc', 'debt ceiling', 'system surplus']}
             />
           </ErrorBoundary>
-          <ResourceBox type={'delegates'} />
+          {/* <ResourceBox type={'delegates'} /> */}
           <ResourceBox type={'general'} />
         </Stack>
       </SidebarLayout>

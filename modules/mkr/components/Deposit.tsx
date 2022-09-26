@@ -22,6 +22,7 @@ import { useTokenAllowance } from 'modules/web3/hooks/useTokenAllowance';
 import { useLock } from '../hooks/useLock';
 import { Tokens } from 'modules/web3/constants/tokens';
 import { ExternalLink } from 'modules/app/components/ExternalLink';
+import { GenericLink } from 'modules/app/components/GenericLink';
 
 const ModalContent = ({
   close,
@@ -87,7 +88,7 @@ const ModalContent = ({
                 Deposit into voting contract
               </Text>
               <Text as="p" sx={{ color: 'mutedAlt', fontSize: 3, mt: 3 }}>
-                Input the amount of MKR to deposit into the voting contract.
+                Input the amount of GSUp to deposit into the voting contract.
               </Text>
             </Box>
 
@@ -111,7 +112,7 @@ const ModalContent = ({
                 });
               }}
             >
-              Deposit MKR
+              Deposit GSUp
             </Button>
           </Stack>
         )}
@@ -122,7 +123,7 @@ const ModalContent = ({
                 Approve voting contract
               </Text>
               <Text as="p" sx={{ color: 'mutedAlt', fontSize: 3, mt: 3 }}>
-                Approve the transfer of MKR to the voting contract.
+                Approve the transfer of GSUp to the voting contract.
               </Text>
             </Box>
 
@@ -143,12 +144,9 @@ const ModalContent = ({
             {showProxyInfo && (
               <Text as="p" sx={{ fontSize: 2, mt: 3, color: 'textSecondary', textAlign: 'center' }}>
                 Interested in creating a proxy contract instead of depositing directly into Chief? Learn more{' '}
-                <ExternalLink
-                  href="https://blog.makerdao.com/the-makerdao-voting-proxy-contract/"
-                  title="Read about proxy contracts"
-                >
+                <GenericLink url="/inprogress" title="Read about proxy contracts">
                   <Text sx={{ color: 'accentBlue', fontSize: 2 }}>here</Text>
-                </ExternalLink>{' '}
+                </GenericLink>{' '}
                 and create one{' '}
                 <ExternalLink href="https://v1.vote.makerdao.com/proxysetup" title="Go to proxy setup">
                   <Text sx={{ color: 'accentBlue', fontSize: 2 }}>here</Text>

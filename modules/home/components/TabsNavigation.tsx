@@ -6,14 +6,14 @@ export default function TabsNavigation({ activeTab }: { activeTab: string }): Re
       href: '#vote',
       text: 'Vote'
     },
-    {
-      href: '#delegate',
-      text: 'Delegate'
-    },
-    {
-      href: '#learn',
-      text: 'Learn'
-    },
+    // {
+    //   href: '#delegate',
+    //   text: 'Delegate'
+    // },
+    // {
+    //   href: '#learn',
+    //   text: 'Learn'
+    // },
     {
       href: '#engage',
       text: 'Engage'

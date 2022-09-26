@@ -65,7 +65,7 @@ export function DelegateMKRChart({ delegate }: { delegate: Delegate }): React.Re
     return (
       <Box>
         {monthMKR && <Text as="p">{formatXAxis(monthMKR.date)}</Text>}
-        <Text as="p">MKR Weight: {new BigNumber(monthMKR?.MKR || 0).toFormat(2)}</Text>
+        <Text as="p">GSUp Weight: {new BigNumber(monthMKR?.GSUp || 0).toFormat(2)}</Text>
       </Box>
     );
   }
@@ -103,7 +103,7 @@ export function DelegateMKRChart({ delegate }: { delegate: Delegate }): React.Re
             Voting Weight
           </Text>
           <Text as="p" variant="secondary" color="onSurface">
-            MKR delegated over time
+            GSUp delegated over time
           </Text>
         </Box>
         <Box>
@@ -143,7 +143,7 @@ export function DelegateMKRChart({ delegate }: { delegate: Delegate }): React.Re
             tickFormatter={formatXAxis}
           />
           <YAxis
-            dataKey="MKR"
+            dataKey="GSUp"
             interval="preserveStartEnd"
             axisLine={false}
             stroke="#ADADAD"
@@ -151,7 +151,7 @@ export function DelegateMKRChart({ delegate }: { delegate: Delegate }): React.Re
             label={{
               fill: '#708390',
               position: 'bottomLeft',
-              value: 'MKR',
+              value: 'GSUp',
               viewBox: { height: 10, width: 10, x: 20, y: 300 }
             }}
             tickMargin={5}
@@ -161,7 +161,7 @@ export function DelegateMKRChart({ delegate }: { delegate: Delegate }): React.Re
           <CartesianGrid stroke="#D5D9E0" strokeDasharray="5 5" />
           <Tooltip content={renderTooltip} />
 
-          <Area dataKey="MKR" stroke={'#1AAB9B'} type="monotone" fill="url(#gradientFront)" />
+          <Area dataKey="GSUp" stroke={'#1AAB9B'} type="monotone" fill="url(#gradientFront)" />
 
           <ReferenceLine stroke={'#D4D9E1'} x={0} y={0} />
         </AreaChart>
@@ -183,7 +183,7 @@ export function DelegateMKRChart({ delegate }: { delegate: Delegate }): React.Re
             }}
           />
           <Text variant="secondary" color="onSurface">
-            MKR delegated to this delegate
+            GSUp delegated to this delegate
           </Text>
         </Box>
       </Box>
