@@ -5,7 +5,7 @@
     "longname": "High Impact",
     "recommend_ui": true,
     "description": "Polls that GovAlpha has judged high-impact",
-    "related_link": "/inprogress",
+    "related_link": "https://forum.makerdao.com/t/introducing-impact-estimations/14267",
     "precedence": 1
   },
   {
@@ -30,7 +30,7 @@
     "longname": "MIP",
     "recommend_ui": true,
     "description": "Polls related to the Maker Improvement Proposal Process defined in MIP0",
-    "related_link": "/inprogress",
+    "related_link": "https://mips.makerdao.com/mips/details/MIP0",
     "precedence": 4
   },
   {
@@ -39,7 +39,7 @@
     "longname": "Core Unit Onboarding",
     "recommend_ui": true,
     "description": "Proposals to onboard new Core Units into MakerDAO",
-    "related_link": "/inprogress",
+    "related_link": "https://mips.makerdao.com/mips/details/MIP39",
     "precedence": 5
   },
   {
@@ -56,7 +56,7 @@
     "longname": "Collateral Onboarding",
     "recommend_ui": true,
     "description": "Polls relating to the onboarding of collateral into the Maker Protocol",
-    "related_link": "/inprogress",
+    "related_link": "https://collateral.makerdao.com/",
     "precedence": 7
   },
   {
@@ -73,7 +73,7 @@
     "longname": "Budget",
     "recommend_ui": true,
     "description": "Budget proposals made by MakerDAO's Core Units",
-    "related_link": "/inprogress",
+    "related_link": "https://mips.makerdao.com/mips/details/MIP40",
     "precedence": 9
   },
   {
@@ -82,7 +82,7 @@
     "longname": "Medium Impact",
     "recommend_ui": true,
     "description": "Polls that GovAlpha has judged medium-impact",
-    "related_link": "/inprogress",
+    "related_link": "https://forum.makerdao.com/t/introducing-impact-estimations/14267",
     "precedence": 10
   },
   {
@@ -99,7 +99,7 @@
     "longname": "System Surplus",
     "recommend_ui": true,
     "description": "Changes to the System Surplus Buffer",
-    "related_link": "/inprogress",
+    "related_link": "https://manual.makerdao.com/parameter-index/core/param-system-surplus-buffer",
     "precedence": 12
   },
   {
@@ -108,7 +108,7 @@
     "longname": "Greenlight",
     "recommend_ui": true,
     "description": "Polls relating to the collateral application greenlight process",
-    "related_link": "/inprogress",
+    "related_link": "https://mips.makerdao.com/mips/details/MIP9",
     "precedence": 13
   },
   {
@@ -125,7 +125,7 @@
     "longname": "Low Impact",
     "recommend_ui": true,
     "description": "Polls that GovAlpha has judged low-impact",
-    "related_link": "/inprogress",
+    "related_link": "https://forum.makerdao.com/t/introducing-impact-estimations/14267",
     "precedence": 15
   },
   {
@@ -134,7 +134,7 @@
     "longname": "Collateral Offboarding",
     "recommend_ui": true,
     "description": "Polls relating to the offboarding of collateral into the Maker Protocol",
-    "related_link": "/inprogress",
+    "related_link": "https://mips.makerdao.com/mips/details/MIP62",
     "precedence": 16
   },
   {
@@ -143,7 +143,7 @@
     "longname": "Delegates",
     "recommend_ui": true,
     "description": "Polls relating to MakerDAO's Recognized Delegates",
-    "related_link": "/inprogress",
+    "related_link": "https://manual.makerdao.com/governance/what-is-delegation",
     "precedence": 17
   },
   {
@@ -152,7 +152,7 @@
     "longname": "MakerDAO Open Market Committee",
     "recommend_ui": true,
     "description": "Proposals made by the MakerDAO Open Market Committee",
-    "related_link": "/inprogress",
+    "related_link": "https://forum.makerdao.com/tag/ppg-omc-001",
     "precedence": 18
   },
   {
@@ -169,7 +169,7 @@
     "longname": "Dai Savings Rate",
     "recommend_ui": true,
     "description": "Polls affecting the Dai Savings Rate",
-    "related_link": "/inprogress",
+    "related_link": "https://manual.makerdao.com/parameter-index/core/param-dai-savings-rate",
     "precedence": 20
   },
   {
@@ -178,7 +178,7 @@
     "longname": "DAI Direct Deposit Module",
     "recommend_ui": true,
     "description": "Polls relating to changes or onboarding of DAI Direct Deposit Modules",
-    "related_link": "/inprogress",
+    "related_link": "https://manual.makerdao.com/module-index/module-dai-direct-deposit",
     "precedence": 21
   },
   {
@@ -187,7 +187,7 @@
     "longname": "Peg Stability Module",
     "recommend_ui": true,
     "description": "Polls relating to changes or onboarding of Peg Stability Modules",
-    "related_link": "/inprogress",
+    "related_link": "https://manual.makerdao.com/module-index/module-psm",
     "precedence": 22
   },
   {
@@ -228,7 +228,7 @@
     "longname": "Ratification Poll",
     "recommend_ui": true,
     "description": "Ratification Polls as defined in MIP51",
-    "related_link": "/inprogress",
+    "related_link": "https://mips.makerdao.com/mips/details/MIP51#MIP51c2",
     "precedence": 27
   },
   {
@@ -245,7 +245,7 @@
     "longname": "Inclusion Poll",
     "recommend_ui": false,
     "description": "Inclusion Polls as defined in MIP3 (obsolete)",
-    "related_link": "/inprogress",
+    "related_link": "https://mips.makerdao.com/mips/details/MIP3",
     "precedence": 29
   },
   {
@@ -261,7 +261,7 @@
     "shortname": "Priority Sentiment",
     "longname": "Prioritization Sentiment",
     "recommend_ui": true,
-    "description": "Polls that seek input on prioritization sentiment from GSUp holders",
+    "description": "Polls that seek input on prioritization sentiment from MKR holders",
     "precedence": 31
   }
 ]
