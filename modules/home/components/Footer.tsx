@@ -99,10 +99,10 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
         // },
         {
           url: '/inprogress',
-          title: t('DAI Stats')
+          title: t('GSUc Stats')
         },
         {
-          url: '/inprogress',
+          url: '/terms',
           title: t('Terms')
         }
       ]
