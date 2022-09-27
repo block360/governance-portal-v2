@@ -132,13 +132,9 @@ export default function Participation({
           <Flex sx={{ flexDirection: 'column', flex: 1, gap: 3 }}>
             <Flex sx={{ justifyContent: 'space-between' }}>
               <Heading>Top Voters</Heading>
-              <ExternalLink
-                href="https://governance-metrics-dashboard.vercel.app/"
-                title="View More Metrics"
-                target="_blank"
-              >
+              <GenericLink url="/inprogress" title="View More Metrics">
                 <ViewMore label="View More Metrics" />
-              </ExternalLink>
+              </GenericLink>
             </Flex>
             <Card
               sx={{

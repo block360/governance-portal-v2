@@ -10,10 +10,10 @@ export default function TabsNavigation({ activeTab }: { activeTab: string }): Re
     //   href: '#delegate',
     //   text: 'Delegate'
     // },
-    // {
-    //   href: '#learn',
-    //   text: 'Learn'
-    // },
+    {
+      href: '#learn',
+      text: 'Learn'
+    },
     {
       href: '#engage',
       text: 'Engage'
