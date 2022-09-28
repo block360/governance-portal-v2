@@ -42,7 +42,7 @@ export const CHAIN_INFO: ChainInfo = {
     label: 'Mainnet',
     network: SupportedNetworks.MAINNET,
     defaultRpc: NodeProviders.ALCHEMY,
-    spockUrl: process.env.NODE_ENV === 'development' ? STAGING_MAINNET_SPOCK_URL : MAINNET_SPOCK_URL,
+    spockUrl: MAINNET_SPOCK_URL,
     rpcs: {
       [NodeProviders.INFURA]: `https://mainnet.infura.io/v3/${config.INFURA_KEY}`,
       [NodeProviders.ALCHEMY]: `https://eth-mainnet.alchemyapi.io/v2/${config.ALCHEMY_KEY}`
@@ -54,7 +54,7 @@ export const CHAIN_INFO: ChainInfo = {
     label: 'Goerli',
     network: SupportedNetworks.GOERLI,
     defaultRpc: NodeProviders.ALCHEMY,
-    spockUrl: GOERLI_SPOCK_URL,
+    spockUrl: config.GOERLI_SPOCK_URL,
     rpcs: {
       [NodeProviders.INFURA]: `https://goerli.infura.io/v3/${config.INFURA_KEY}`,
       [NodeProviders.ALCHEMY]: `https://eth-goerli.alchemyapi.io/v2/${config.ALCHEMY_KEY}`
