@@ -1,4 +1,5 @@
-export const EXEC_PROPOSAL_INDEX =
-  'https://raw.githubusercontent.com/block360/community/mueed/governance/votes/active/proposals.json';
+import { config } from 'lib/config';
+
+export const EXEC_PROPOSAL_INDEX = config.EXECUTIVE_PROPOSAL_INDEX;
 
 export const EXEC_PAGE_SIZE = 10;

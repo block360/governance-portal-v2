@@ -25,6 +25,7 @@ type SystemConfig = {
   EXECUTIVE_GITHUB_REPO: string;
   EXECUTIVE_GITHUB_BRANCH: string;
   EXECUTIVE_GITHUB_PAGE: string;
+  EXECUTIVE_PROPOSAL_INDEX: string;
 };
 
 export const config: SystemConfig = {
@@ -51,5 +52,6 @@ export const config: SystemConfig = {
   EXECUTIVE_GITHUB_OWNER: process.env.EXECUTIVE_GITHUB_OWNER || '',
   EXECUTIVE_GITHUB_REPO: process.env.EXECUTIVE_GITHUB_REPO || '',
   EXECUTIVE_GITHUB_BRANCH: process.env.EXECUTIVE_GITHUB_BRANCH || '',
-  EXECUTIVE_GITHUB_PAGE: process.env.EXECUTIVE_GITHUB_PAGE || ''
+  EXECUTIVE_GITHUB_PAGE: process.env.EXECUTIVE_GITHUB_PAGE || '',
+  EXECUTIVE_PROPOSAL_INDEX: process.env.EXECUTIVE_PROPOSAL_INDEX || ''
 };
