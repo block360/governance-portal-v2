@@ -21,17 +21,13 @@ export async function getGithubExecutives(network: SupportedNetworks): Promise<C
     return JSON.parse(cachedProposals);
   }
 
-  const proposalIndex = {
-    mainnet: [
-      'https://raw.githubusercontent.com/mainnet/community/mueed/governance/votes/Executive%20vote%20-%20August%2012%2C%202022.md'
-    ]
-  };
+  const proposalIndex = await (await fetch(EXEC_PROPOSAL_INDEX)).json();
 
   const githubRepo = {
     owner: config.EXECUTIVE_GITHUB_OWNER,
     repo: config.EXECUTIVE_GITHUB_REPO,
     branch: config.EXECUTIVE_GITHUB_BRANCH,
-    page: config.EXECUTIVE_GITHUB_REPO
+    page: config.EXECUTIVE_GITHUB_PAGE
   };
 
   const githubResponse = await fetchGithubGraphQL(githubRepo, allGithubExecutives);

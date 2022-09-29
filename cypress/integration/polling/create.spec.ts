@@ -15,7 +15,7 @@ describe('/polling create page', async () => {
 
     setAccount(TEST_ACCOUNTS.normal, () => {
       const urlMetadata =
-        'https://raw.githubusercontent.com/makerdao/community/master/governance/polls/Add%20the%20Aave%20Direct%20Deposit%20DAI%20Module%20-%20October%2011%2C%202021.md';
+        'https://raw.githubusercontent.com/block360/community/mueed/governance/polls/Add%20the%20Aave%20Direct%20Deposit%20DAI%20Module%20-%20October%2011%2C%202021.md';
 
       // The button to create the poll should be disabled
       cy.get('[data-testid="button-create-poll"]').should('be.disabled');
@@ -37,7 +37,7 @@ describe('/polling create page', async () => {
     visitPage('/polling/create');
 
     const urlMetadata =
-      'https://raw.githubusercontent.com/makerdao/community/master/governance/polls/Nonexistentpoll.md';
+      'https://raw.githubusercontent.com/block360/community/mueed/governance/polls/Nonexistentpoll.md';
 
     // The button to create the poll should be disabled
     cy.get('[data-testid="button-create-poll"]').should('be.disabled');
