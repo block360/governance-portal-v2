@@ -4,6 +4,7 @@ import { Tag } from 'modules/app/types/tag';
 import pollTags from 'modules/tags/constants/poll-tags-definitions.json';
 import pollTagsMapping from 'modules/tags/constants/poll-tags-mapping.json';
 import { pollTagsMappingJSONCacheKey } from 'modules/cache/constants/cache-keys';
+import { config } from 'lib/config';
 export function getPollTags(): Tag[] {
   return pollTags;
 }
@@ -16,8 +17,7 @@ export async function getPollTagsMapping(): Promise<{ [key: number]: string[] }>
       return JSON.parse(existingTags);
     }
 
-    const urlPollTags =
-      'https://raw.githubusercontent.com/block360/community/mueed/governance/polls/meta/poll-tags.json';
+    const urlPollTags = config.urlPollTags;
     const pollTags = await fetch(urlPollTags);
     const dataPollTags = await pollTags.json();
 
