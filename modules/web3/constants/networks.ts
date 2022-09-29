@@ -4,13 +4,6 @@ import { SupportedChainId } from './chainID';
 
 export const NetworkContextName = 'NETWORK';
 
-import {
-  MAINNET_SPOCK_URL,
-  STAGING_MAINNET_SPOCK_URL,
-  GOERLI_SPOCK_URL
-  // LOCAL_SPOCK_URL,
-} from 'modules/gql/gql.constants';
-
 export enum SupportedConnectors {
   METAMASK = 'MetaMask',
   WALLET_CONNECT = 'WalletConnect',
@@ -42,7 +35,7 @@ export const CHAIN_INFO: ChainInfo = {
     label: 'Mainnet',
     network: SupportedNetworks.MAINNET,
     defaultRpc: NodeProviders.ALCHEMY,
-    spockUrl: MAINNET_SPOCK_URL,
+    spockUrl: config.MAINNET_SPOCK_URL,
     rpcs: {
       [NodeProviders.INFURA]: `https://mainnet.infura.io/v3/${config.INFURA_KEY}`,
       [NodeProviders.ALCHEMY]: `https://eth-mainnet.alchemyapi.io/v2/${config.ALCHEMY_KEY}`
@@ -66,7 +59,7 @@ export const CHAIN_INFO: ChainInfo = {
     label: 'GoerliFork',
     network: SupportedNetworks.GOERLIFORK,
     defaultRpc: NodeProviders.LOCAL,
-    spockUrl: GOERLI_SPOCK_URL,
+    spockUrl: config.GOERLI_SPOCK_URL,
     rpcs: {
       [NodeProviders.LOCAL]: 'http://localhost:8545'
     }

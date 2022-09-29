@@ -21,6 +21,7 @@ type SystemConfig = {
   GOERLI_SPOCK_URL: string;
   STAGING_MAINNET_SPOCK_URL: string;
   MAINNET_SPOCK_URL: string;
+  LOCAL_SPOCK_URL: string;
   EXECUTIVE_GITHUB_OWNER: string;
   EXECUTIVE_GITHUB_REPO: string;
   EXECUTIVE_GITHUB_BRANCH: string;
@@ -49,6 +50,7 @@ export const config: SystemConfig = {
   GOERLI_SPOCK_URL: process.env.GOERLI_SPOCK_URL || '',
   STAGING_MAINNET_SPOCK_URL: process.env.STAGING_MAINNET_SPOCK_URL || '',
   MAINNET_SPOCK_URL: process.env.MAINNET_SPOCK_URL || '',
+  LOCAL_SPOCK_URL: process.env.LOCAL_SPOCK_URL || '',
   EXECUTIVE_GITHUB_OWNER: process.env.EXECUTIVE_GITHUB_OWNER || '',
   EXECUTIVE_GITHUB_REPO: process.env.EXECUTIVE_GITHUB_REPO || '',
   EXECUTIVE_GITHUB_BRANCH: process.env.EXECUTIVE_GITHUB_BRANCH || '',
