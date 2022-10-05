@@ -16,6 +16,8 @@ type SystemConfig = {
   REDIS_URL: string;
   MIGRATION_WEBHOOK_URL: string;
   DASHBOARD_PASSWORD: string;
+  AUCTION_PORTAL_URL: string;
+  ORACLE_FEEDS_URL: string;
 };
 
 export const config: SystemConfig = {
@@ -35,5 +37,7 @@ export const config: SystemConfig = {
   MIXPANEL_DEV: process.env.NEXT_PUBLIC_MIXPANEL_DEV || '',
   REDIS_URL: process.env.REDIS_URL || '',
   MIGRATION_WEBHOOK_URL: process.env.MIGRATION_WEBHOOK_URL || '',
-  DASHBOARD_PASSWORD: process.env.DASHBOARD_PASSWORD || ''
+  DASHBOARD_PASSWORD: process.env.DASHBOARD_PASSWORD || '',
+  AUCTION_PORTAL_URL: process.env.AUCTION_PORTAL_URL || '',
+  ORACLE_FEEDS_URL: process.env.ORACLE_FEEDS_URL || ''
 };

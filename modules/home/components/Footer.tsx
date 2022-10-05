@@ -5,6 +5,7 @@ import React from 'react';
 import { translate } from '@makerdao/i18n-helper';
 import { useBreakpointIndex } from '@theme-ui/match-media';
 import { InternalLink } from 'modules/app/components/InternalLink';
+import { config } from 'lib/config';
 
 const ContactSection = ({ heading, logos, icon }) => {
   return (
@@ -35,7 +36,7 @@ const ContactSection = ({ heading, logos, icon }) => {
           </ExternalLink>
         ))}
       </Flex>
-      <Icon name={icon} size={'100px'} sx={{ my: [0, 0, 4] }} />
+      <Icon name={icon} size={'130px'} sx={{ my: [0, 0, 4] }} />
     </Flex>
   );
 };
@@ -53,27 +54,27 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
         {
           url: '/inprogress',
           title: t('Forum')
-        },
-        {
-          url: '/inprogress',
-          title: t('Operational Manual')
-        },
-        {
-          url: '/inprogress',
-          title: t('Governance FAQs')
-        },
-        {
-          url: '/inprogress',
-          title: t('Gov Tracking Sheet')
-        },
-        {
-          url: '/inprogress',
-          title: t('Monthly Gov Cycle')
-        },
-        {
-          url: '/inprogress',
-          title: t('Weekly Gov Cycle')
         }
+        // {
+        //   url: '/inprogress',
+        //   title: t('Operational Manual')
+        // },
+        // {
+        //   url: '/inprogress',
+        //   title: t('Governance FAQs')
+        // }
+        // {
+        //   url: '/inprogress',
+        //   title: t('Gov Tracking Sheet')
+        // },
+        // {
+        //   url: '/inprogress',
+        //   title: t('Monthly Gov Cycle')
+        // },
+        // {
+        //   url: '/inprogress',
+        //   title: t('Weekly Gov Cycle')
+        // }
       ]
     },
     {
@@ -86,17 +87,17 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
         },
 
         {
-          url: 'https://auctions.makerdao.network/',
+          url: config.AUCTION_PORTAL_URL || 'unified-auctions.gsuprotocol.io',
           title: t('Auctions Dashboard')
         },
         // {
         //   url: 'https://migrate.makerdao.com/',
         //   title: t('Migrate Dashboard')
         // },
-        // {
-        //   url: 'https://makerburn.com/',
-        //   title: t('MakerBurn')
-        // },
+        {
+          url: '/inprogress',
+          title: t('MakerBurn')
+        },
         {
           url: '/inprogress',
           title: t('GSUc Stats')
@@ -119,7 +120,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
           title: t('Technical Docs')
         },
         {
-          url: 'https://vote.makerdao.com/api-docs',
+          url: '/inprogress',
           title: t('API Docs')
         },
         {
@@ -131,7 +132,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
           title: t('Brand Assets')
         },
         {
-          url: 'https://gsucoin.app/oracles',
+          url: config.ORACLE_FEEDS_URL || 'https://gsucoin.app/oracles',
           title: t('Oracle Feeds')
         }
       ]

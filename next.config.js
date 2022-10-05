@@ -53,7 +53,9 @@ const moduleExports = {
     ALCHEMY_KEY: process.env.ALCHEMY_KEY || '_gg7wSSi0KMBsdKnGVfHDueq6xMB9EkC', // ethers default alchemy key
     POCKET_KEY: process.env.POCKET_KEY,
     ETHERSCAN_KEY: process.env.ETHERSCAN_KEY,
-    GITHUB_TOKEN: process.env.GITHUB_TOKEN
+    GITHUB_TOKEN: process.env.GITHUB_TOKEN,
+    AUCTION_PORTAL_URL:process.env.AUCTION_PORTAL_URL,
+    ORACLE_FEEDS_URL:process.env.ORACLE_FEEDS_URL
   },
 
   // Opt-in SWC minification (next 12.0.2)
