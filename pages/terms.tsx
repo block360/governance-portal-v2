@@ -343,7 +343,7 @@ disputed use is not authorized by the copyright owner, its agent, or the
 law; a statement by you, made under penalty of perjury, that the above
 information in your Notice is accurate and that you are the copyright or
 intellectual property owner or authorized to act on the copyright or
-intellectual property owner\'s behalf.
+intellectual property owner's behalf.
 
 12. Arbitration and Class Action Waiver
 
@@ -359,7 +359,7 @@ an arbitration.
 If we cannot resolve the dispute through good-faith negotiations, you
 and we agree that any dispute arising under this Agreement shall be
 finally settled in binding arbitration, on an individual basis, in
-accordance with the Danish Arbitration Association\'s rules for
+accordance with the Danish Arbitration Association's rules for
 arbitration of consumer-related disputes (accessible at
 <https://voldgift.dk/voldgiftssager/?lang=en>) and you and we hereby
 expressly waive trial by jury and right to participate in a class action
@@ -367,18 +367,18 @@ lawsuit or class-wide arbitration. The arbitration will be conducted by
 a single, neutral arbitrator and shall take place in the county or
 parish in which you reside, or another mutually agreeable location, in
 the English language. The arbitrator may award any relief that a court
-of competent jurisdiction could award, including attorneys\' fees when
+of competent jurisdiction could award, including attorneys' fees when
 authorized by law, and the arbitral decision may be enforced in any
 court. At your request, hearings may be conducted in person or by
 telephone and the arbitrator may provide for submitting and determining
 motions on briefs, without oral hearings. The prevailing party in any
 action or proceeding to enforce this agreement shall be entitled to
-costs and attorneys\' fees. If the arbitrator(s) or arbitration
+costs and attorneys' fees. If the arbitrator(s) or arbitration
 administrator would impose filing fees or other administrative costs on
 you, we will reimburse you, upon request, to the extent such fees or
 costs would exceed those that you would otherwise have to pay if you
 were proceeding instead in a court. We will also pay additional fees or
-costs if required to do so by the arbitration administrator\'s rules or
+costs if required to do so by the arbitration administrator's rules or
 applicable law. Apart from the foregoing, each Party will be responsible
 for any other fees or costs, such as attorney fees that the Party may
 incur. If a court decides that any provision of this section 12.2 is
@@ -415,7 +415,7 @@ of the Terms shall not constitute a waiver of such right or provision.
 If any provision of the Terms is found by an arbitrator or court of
 competent jurisdiction to be invalid, the parties nevertheless agree
 that the arbitrator or court should endeavor to give effect to the
-parties\' intentions as reflected in the provision, and the other
+parties' intentions as reflected in the provision, and the other
 provisions of the Terms remain in full force and effect.
 
 3.  Statute of Limitations
@@ -445,7 +445,7 @@ your information in compliance with the Privacy Policy.
 15. Prohibited Use
 
 You may not use the Service to engage in the following categories of
-activity (\"Prohibited Uses\"). The specific types of use listed below
+activity ("Prohibited Uses"). The specific types of use listed below
 are representative, but not exhaustive. If you are uncertain as to
 whether or not your use of the Services involves a Prohibited Use, or
 have questions about how these requirements apply to you, please contact
@@ -454,10 +454,10 @@ you confirm that you will not use this Service to do any of the
 following: Unlawful Activity: Activity which would violate, or assist in
 violation of, any law, statute, ordinance, or regulation, sanctions
 programs administered in any relevant country, including but not limited
-to the U.S. Department of Treasury\'s Office of Foreign Assets Control
-(\"OFAC\"), or which would involve proceeds of any unlawful activity;
+to the U.S. Department of Treasury's Office of Foreign Assets Control
+("OFAC"), or which would involve proceeds of any unlawful activity;
 publish, distribute or disseminate any unlawful material or information
-Abuse Other Users: Interfere with another individual\'s or entity\'s
+Abuse Other Users: Interfere with another individual's or entity's
 access to or use of any Services; defame, abuse, extort, harass, stalk,
 threaten or otherwise violate or infringe the legal rights (such as, but
 not limited to, rights of privacy, publicity and intellectual property)
