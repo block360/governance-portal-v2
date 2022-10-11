@@ -32,7 +32,7 @@ export function NewAddressInitial({
             delegate contracts.
           </Text>
         </Flex>
-        <Flex sx={{ width: '40%' }}>
+        {/* <Flex sx={{ width: '40%' }}>
           <Flex sx={{ bg: 'onSurfaceAlt', p: 3 }}>
             <Flex sx={{ mt: '5px', mr: 3, m1: 1, alignContent: 'flex-start', width: '100px' }}>
               <Icon name="Gnosis Safe" />
@@ -45,7 +45,7 @@ export function NewAddressInitial({
               </Text>
             </Flex>
           </Flex>
-        </Flex>
+        </Flex> */}
       </Flex>
       <Alert variant="notice" sx={{ my: 4 }}>
         You need to use a different wallet address for generating your new delegate contract. Make sure the

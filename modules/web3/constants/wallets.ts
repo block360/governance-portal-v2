@@ -5,8 +5,8 @@ export enum ConnectionType {
   INJECTED = 'INJECTED',
   COINBASE_WALLET = 'COINBASE_WALLET',
   WALLET_CONNECT = 'WALLET_CONNECT',
-  NETWORK = 'NETWORK',
-  GNOSIS_SAFE = 'GNOSIS_SAFE'
+  NETWORK = 'NETWORK'
+  // GNOSIS_SAFE = 'GNOSIS_SAFE'
 }
 
 // "Network" connector is not a wallet type and must be excluded
@@ -25,11 +25,11 @@ export const SUPPORTED_WALLETS: {
   [SupportedConnectors.COINBASE_WALLET]: {
     name: SupportedConnectors.COINBASE_WALLET,
     connectionType: ConnectionType.COINBASE_WALLET
-  },
-  [SupportedConnectors.GNOSIS_SAFE]: {
-    name: SupportedConnectors.GNOSIS_SAFE,
-    connectionType: ConnectionType.GNOSIS_SAFE
   }
+  // [SupportedConnectors.GNOSIS_SAFE]: {
+  //   name: SupportedConnectors.GNOSIS_SAFE,
+  //   connectionType: ConnectionType.GNOSIS_SAFE
+  // }
 };
 
 export type WalletName = Exclude<SupportedConnectors, SupportedConnectors.NETWORK>;

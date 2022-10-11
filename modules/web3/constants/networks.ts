@@ -15,7 +15,7 @@ export enum SupportedConnectors {
   METAMASK = 'MetaMask',
   WALLET_CONNECT = 'WalletConnect',
   COINBASE_WALLET = 'Coinbase Wallet',
-  GNOSIS_SAFE = 'Gnosis Safe',
+  // GNOSIS_SAFE = 'Gnosis Safe',
   NETWORK = 'Network'
 }
 

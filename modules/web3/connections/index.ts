@@ -78,14 +78,14 @@ export const coinbaseWalletConnection: Connection = {
 const [web3GnosisSafe, web3GnosisSafeHooks] = initializeConnector<any>(
   actions => new GnosisSafe({ actions })
 );
-export const gnosisSafeConnection: Connection = {
-  connector: web3GnosisSafe as any,
-  hooks: web3GnosisSafeHooks,
-  type: ConnectionType.GNOSIS_SAFE
-};
+// export const gnosisSafeConnection: Connection = {
+//   connector: web3GnosisSafe as any,
+//   hooks: web3GnosisSafeHooks,
+//   type: ConnectionType.GNOSIS_SAFE
+// };
 
 export const orderedConnectionTypes = [
-  gnosisSafeConnection.type,
+  // gnosisSafeConnection.type,
   coinbaseWalletConnection.type,
   walletConnectConnection.type,
   injectedConnection.type,
@@ -93,7 +93,7 @@ export const orderedConnectionTypes = [
 ];
 
 const CONNECTIONS = [
-  gnosisSafeConnection,
+  // gnosisSafeConnection,
   coinbaseWalletConnection,
   walletConnectConnection,
   injectedConnection,
@@ -117,8 +117,8 @@ export function getConnection(c: Connector | ConnectionType) {
         return walletConnectConnection;
       case ConnectionType.NETWORK:
         return networkConnection;
-      case ConnectionType.GNOSIS_SAFE:
-        return gnosisSafeConnection;
+      // case ConnectionType.GNOSIS_SAFE:
+      //   return gnosisSafeConnection;
     }
   }
 }
@@ -133,7 +133,7 @@ export function connectorToWalletName(connector: Connector) {
       return SUPPORTED_WALLETS['Coinbase Wallet'].name;
     case ConnectionType.WALLET_CONNECT:
       return SUPPORTED_WALLETS.WalletConnect.name;
-    case ConnectionType.GNOSIS_SAFE:
-      return SUPPORTED_WALLETS['Gnosis Safe'].name;
+    // case ConnectionType.GNOSIS_SAFE:
+    //   return SUPPORTED_WALLETS['Gnosis Safe'].name;
   }
 }
