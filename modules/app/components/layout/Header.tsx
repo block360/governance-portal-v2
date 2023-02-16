@@ -93,13 +93,9 @@ const HeaderMenu = ({ onToggleTheme, mode, ...props }): JSX.Element => {
             variant: 'menubuttons.default.headerItem'
           }}
         >
-          <ExternalLink
-            styles={{ variant: 'links.nostyle' }}
-            href="https://governance-metrics-dashboard.gsuprotocol.io/"
-            title="Stats"
-          >
+          <InternalLink styles={{ variant: 'links.nostyle' }} href="/inprogress" title="Stats">
             <MenuItemContent icon="stats" label="Stats" />
-          </ExternalLink>
+          </InternalLink>
         </MenuItem>
         <MenuItem
           onSelect={() => ({})}
@@ -107,13 +103,9 @@ const HeaderMenu = ({ onToggleTheme, mode, ...props }): JSX.Element => {
             variant: 'menubuttons.default.headerItem'
           }}
         >
-          <ExternalLink
-            styles={{ variant: 'links.nostyle' }}
-            href="https://gsuprotocol.world/en/learn/governance/"
-            title="FAQs"
-          >
+          <InternalLink styles={{ variant: 'links.nostyle' }} href="/inprogress" title="FAQs">
             <MenuItemContent icon="faq" label="FAQs" />
-          </ExternalLink>
+          </InternalLink>
         </MenuItem>
         <MenuItem
           onSelect={onToggleTheme}
@@ -444,22 +436,14 @@ const MobileMenu = ({ hide, router, gas, onToggleTheme, mode, network }) => {
 
           <Flex sx={{ flexDirection: 'column', alignItems: 'flex-start', gap: 3, width: '50%' }}>
             <Flex onClick={hide}>
-              <ExternalLink
-                styles={{ variant: 'links.nostyle' }}
-                href="https://governance-metrics-dashboard.gsuprotocol.io/"
-                title="Stats"
-              >
+              <InternalLink styles={{ variant: 'links.nostyle' }} href="/inprogress" title="Stats">
                 <MenuItemContent icon="stats" label="Stats" />
-              </ExternalLink>
+              </InternalLink>
             </Flex>
             <Flex onClick={hide}>
-              <ExternalLink
-                styles={{ variant: 'links.nostyle' }}
-                href="https://gsuprotocol.world/en/learn/governance/"
-                title="FAQs"
-              >
+              <InternalLink styles={{ variant: 'links.nostyle' }} href="/inprogress" title="FAQs">
                 <MenuItemContent icon="faq" label="FAQs" />
-              </ExternalLink>
+              </InternalLink>
             </Flex>
             <Flex onClick={onToggleTheme}>
               {/* <MenuItemContent icon="color_mode_sun" label={`${mode === 'dark' ? 'Light' : 'Dark'} mode`} /> */}

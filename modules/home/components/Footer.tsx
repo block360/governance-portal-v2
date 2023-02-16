@@ -50,15 +50,15 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
       header: t('Governance'),
       list: [
         {
-          url: 'https://forum.gsuprotocol.io/',
+          url: '/inprogress',
           title: t('Forum')
         },
         {
-          url: 'https://manual.gsuprotocol.io/',
+          url: '/inprogress',
           title: t('Operational Manual')
         },
         {
-          url: 'https://gsuprotocol.world/en/learn/governance/',
+          url: '/inprogress',
           title: t('Governance FAQs')
         }
         // {
@@ -79,7 +79,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
       header: t('Products & Tools'),
       list: [
         {
-          url: 'https://statuspage.gsuprotocol.io/',
+          url: '/inprogress',
           title: t('Service Status')
         },
 
@@ -113,7 +113,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
           title: t('Whitepaper')
         },
         {
-          url: 'https://docs.gsuprotocol.io/',
+          url: '/inprogress',
           title: t('Technical Docs')
         },
         {
@@ -121,7 +121,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
           title: t('API Docs')
         },
         {
-          url: 'https://github.com/gsu-protocol/developerguides',
+          url: '/inprogress',
           title: t('Developer Guides')
         },
         {
@@ -129,7 +129,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
           title: t('Brand Assets')
         },
         {
-          url: 'https://gsuprotocol.io/en/feeds/',
+          url: 'https://gsucoin.app/oracles/',
           title: t('Oracle Feeds')
         }
       ]

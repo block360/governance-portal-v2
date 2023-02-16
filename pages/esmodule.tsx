@@ -22,6 +22,7 @@ import { useCageTime } from 'modules/esm/hooks/useCageTime';
 import { useLockedMkr } from 'modules/mkr/hooks/useLockedMkr';
 import { ErrorBoundary } from 'modules/app/components/ErrorBoundary';
 import { ExternalLink } from 'modules/app/components/ExternalLink';
+import { InternalLink } from 'modules/app/components/InternalLink';
 
 const ESModule = (): React.ReactElement => {
   const loader = useRef<HTMLDivElement>(null);
@@ -172,12 +173,9 @@ const ESModule = (): React.ReactElement => {
           <Text data-testid="es-initiated" sx={{ textAlign: 'center' }}>
             Emergency shutdown has been initiated on {formatDateWithTime(cageTime.toNumber() * 1000)}. This
             dashboard is currently read-only. You can read more information about next steps{' '}
-            <ExternalLink
-              href="https://gsuprotocol.world/en/learn/governance/emergency-shutdown"
-              title="Learn about emergency shutdown"
-            >
+            <InternalLink href="/inprogress" title="Learn about emergency shutdown">
               <Text>here</Text>
-            </ExternalLink>
+            </InternalLink>
             .
           </Text>
         </Flex>
@@ -190,12 +188,9 @@ const ESModule = (): React.ReactElement => {
           The ESM allows GSUp holders to shutdown the system without a central authority. Once{' '}
           {thresholdAmount ? `${formatValue(thresholdAmount, 'wad', 0)}` : '---'} GSUp are entered into the
           ESM, emergency shutdown can be executed.{' '}
-          <ExternalLink
-            href="https://docs.gsuprotocol.io/smart-contract-modules/emergency-shutdown-module"
-            title="View emergency shutdown docs"
-          >
+          <InternalLink href="/inprogress" title="View emergency shutdown docs">
             <Text>Read the documentation here.</Text>
-          </ExternalLink>
+          </InternalLink>
         </Text>
       </Box>
       <Box sx={{ mt: 4 }}>

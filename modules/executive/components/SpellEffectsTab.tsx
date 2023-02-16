@@ -9,6 +9,7 @@ import { formatDateWithoutTime } from 'lib/datetime';
 import { formatLocation, formatDiffValue } from '../helpers/spellDiffParsers';
 import Tooltip from 'modules/app/components/Tooltip';
 import { ErrorBoundary } from 'modules/app/components/ErrorBoundary';
+import { InternalLink } from 'modules/app/components/InternalLink';
 
 const CircleIcon = ({ name }) => (
   <Flex
@@ -147,15 +148,12 @@ export function SpellEffectsTab({
                 registered on the blockchain in the spell smart contract.
               </Text>
               <Box sx={{ mt: 3 }}>
-                <ExternalLink
-                  href="https://gsuprotocol.world/en/learn/governance/audit-exec-spells"
-                  title="Learn more about auditing executive spells"
-                >
+                <InternalLink href="/inprogress" title="Learn more about auditing executive spells">
                   <Text sx={{ color: 'accentBlue', ':hover': { color: 'accentBlueEmphasis' } }}>
                     Learn more about auditing Executive Spells
                     <DaiUIIcon ml={2} name="arrowTopRight" size="2" />
                   </Text>
-                </ExternalLink>
+                </InternalLink>
               </Box>
             </Box>
           )}

@@ -93,7 +93,7 @@ You agree that, except as otherwise expressly provided in these Terms, there sha
 
 1. Notice and Procedure For Making Claims of Copyright Infringement
 
-If you believe that your copyright or the copyright of a person on whose behalf you are authorized to act has been infringed, please provide a written Notice (<hello@gsucoin.app>) containing the following information: an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright or other intellectual property interest; a description of the copyrighted work or other intellectual property that you claim has been infringed; a description of where the material that you claim is infringing is located on the Service; your address, telephone number, and email address; a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; a statement by you, made under penalty of perjury, that the above information in your Notice is accurate and that you are the copyright or intellectual property owner or authorized to act on the copyright or intellectual property owner's behalf.
+If you believe that your copyright or the copyright of a person on whose behalf you are authorized to act has been infringed, please provide a written Notice (<hello@gsuprotocol.io>) containing the following information: an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright or other intellectual property interest; a description of the copyrighted work or other intellectual property that you claim has been infringed; a description of where the material that you claim is infringing is located on the Service; your address, telephone number, and email address; a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; a statement by you, made under penalty of perjury, that the above information in your Notice is accurate and that you are the copyright or intellectual property owner or authorized to act on the copyright or intellectual property owner's behalf.
 
 1. Arbitration and Class Action Waiver
    1. Initial Dispute Resolution
@@ -127,7 +127,7 @@ The section titles in the Terms are for convenience only and have no legal or co
 
 1. Communications
 
-Users with questions, complaints or claims with respect to the Service may contact us using the relevant contact information set forth above and at <hello@gsucoin.app>.
+Users with questions, complaints or claims with respect to the Service may contact us using the relevant contact information set forth above and at <hello@gsuprotocol.io>.
 
 1. Privacy Policy
 
@@ -135,7 +135,7 @@ All information collected on the Site is subject to the Privacy Policy. By using
 
 1. Prohibited Use
 
-You may not use the Service to engage in the following categories of activity ("Prohibited Uses"). The specific types of use listed below are representative, but not exhaustive. If you are uncertain as to whether or not your use of the Services involves a Prohibited Use, or have questions about how these requirements apply to you, please contact us at <hello@gsucoin.app> By opening using the Service provided here, you confirm that you will not use this Service to do any of the following: Unlawful Activity: Activity which would violate, or assist in violation of, any law, statute, ordinance, or regulation, sanctions programs administered in any relevant country, including but not limited to the U.S. Department of Treasury's Office of Foreign Assets Control ("OFAC"), or which would involve proceeds of any unlawful activity; publish, distribute or disseminate any unlawful material or information Abuse Other Users: Interfere with another individual's or entity's access to or use of any Services; defame, abuse, extort, harass, stalk, threaten or otherwise violate or infringe the legal rights (such as, but not limited to, rights of privacy, publicity and intellectual property) of others; incite, threaten, facilitate, promote, or encourage hate, racial intolerance, or violent acts against others; harvest or otherwise collect information from the Site about others, including without limitation email addresses, without proper consent Fraud: Activity which operates to defraud GSU Protocol, GSU coin System and Software users, or any other person; provide any false, inaccurate, or misleading information. Intellectual Property Infringement: Engage in transactions involving items that infringe or violate any copyright, trademark, right of publicity or privacy or any other proprietary right under the law, including but not limited to sales, distribution, or access to counterfeit music, movies, software, or other licensed materials without the appropriate authorization from the rights holder; use of GSU Protocol intellectual property, name, or logo, including use of GSU Protocol trade or service marks, without express consent from GSU Protocol or in a manner that otherwise harms GSU Protocol; any action that implies an untrue endorsement by or affiliation with GSU Protocol.
+You may not use the Service to engage in the following categories of activity ("Prohibited Uses"). The specific types of use listed below are representative, but not exhaustive. If you are uncertain as to whether or not your use of the Services involves a Prohibited Use, or have questions about how these requirements apply to you, please contact us at <hello@gsuprotocol.io> By opening using the Service provided here, you confirm that you will not use this Service to do any of the following: Unlawful Activity: Activity which would violate, or assist in violation of, any law, statute, ordinance, or regulation, sanctions programs administered in any relevant country, including but not limited to the U.S. Department of Treasury's Office of Foreign Assets Control ("OFAC"), or which would involve proceeds of any unlawful activity; publish, distribute or disseminate any unlawful material or information Abuse Other Users: Interfere with another individual's or entity's access to or use of any Services; defame, abuse, extort, harass, stalk, threaten or otherwise violate or infringe the legal rights (such as, but not limited to, rights of privacy, publicity and intellectual property) of others; incite, threaten, facilitate, promote, or encourage hate, racial intolerance, or violent acts against others; harvest or otherwise collect information from the Site about others, including without limitation email addresses, without proper consent Fraud: Activity which operates to defraud GSU Protocol, GSU coin System and Software users, or any other person; provide any false, inaccurate, or misleading information. Intellectual Property Infringement: Engage in transactions involving items that infringe or violate any copyright, trademark, right of publicity or privacy or any other proprietary right under the law, including but not limited to sales, distribution, or access to counterfeit music, movies, software, or other licensed materials without the appropriate authorization from the rights holder; use of GSU Protocol intellectual property, name, or logo, including use of GSU Protocol trade or service marks, without express consent from GSU Protocol or in a manner that otherwise harms GSU Protocol; any action that implies an untrue endorsement by or affiliation with GSU Protocol.
 
 
 1.  Acceptance of Terms
@@ -461,7 +461,7 @@ there shall be no third party beneficiaries to the Terms.
 
 If you believe that your copyright or the copyright of a person on whose
 behalf you are authorized to act has been infringed, please provide a
-written Notice (<hello@gsucoin.app>) containing the following
+written Notice (<hello@gsuprotocol.io>) containing the following
 information: an electronic or physical signature of the person
 authorized to act on behalf of the owner of the copyright or other
 intellectual property interest; a description of the copyrighted work or
@@ -564,7 +564,7 @@ legal or contractual effect.
 
 Users with questions, complaints or claims with respect to the Service
 may contact us using the relevant contact information set forth above
-and at <hello@gsucoin.app>.
+and at <hello@gsuprotocol.io>.
 
 14. Privacy Policy
 
@@ -579,7 +579,7 @@ activity ("Prohibited Uses"). The specific types of use listed below
 are representative, but not exhaustive. If you are uncertain as to
 whether or not your use of the Services involves a Prohibited Use, or
 have questions about how these requirements apply to you, please contact
-us at <hello@gsucoin.app> By opening using the Service provided here,
+us at <hello@gsuprotocol.io> By opening using the Service provided here,
 you confirm that you will not use this Service to do any of the
 following: Unlawful Activity: Activity which would violate, or assist in
 violation of, any law, statute, ordinance, or regulation, sanctions
