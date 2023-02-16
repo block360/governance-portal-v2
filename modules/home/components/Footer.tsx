@@ -79,7 +79,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
       header: t('Products & Tools'),
       list: [
         {
-          url: '/inprogress',
+          url: 'https://gsuprotocol.statuspage.io/',
           title: t('Service Status')
         },
 
