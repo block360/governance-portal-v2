@@ -11,6 +11,7 @@ import SkeletonThemed from 'modules/app/components/SkeletonThemed';
 import { AllLocksResponse, ForumPost } from '../types/participation';
 import DelegateAvatarNameLight from 'modules/delegates/components/DelegateAvatarNameLight';
 import { ErrorBoundary } from 'modules/app/components/ErrorBoundary';
+import { InternalLink } from 'modules/app/components/InternalLink';
 
 const ForumPosts = ({ posts, bpi }: { posts: ForumPost[]; bpi: number }) => {
   return (
@@ -131,13 +132,9 @@ export default function Participation({
           <Flex sx={{ flexDirection: 'column', flex: 1, gap: 3 }}>
             <Flex sx={{ justifyContent: 'space-between' }}>
               <Heading>Top Voters</Heading>
-              <ExternalLink
-                href="https://governance-metrics-dashboard.gsuprotocol.io/"
-                title="View More Metrics"
-                target="_blank"
-              >
+              <InternalLink href="/inprogress" title="View More Metrics">
                 <ViewMore label="View More Metrics" />
-              </ExternalLink>
+              </InternalLink>
             </Flex>
             <Card
               sx={{
