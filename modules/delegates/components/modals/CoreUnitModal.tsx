@@ -4,6 +4,7 @@ import { Text, Heading, Flex, Button, Link as ThemeUILink } from 'theme-ui';
 import { Icon } from '@makerdao/dai-ui-icons';
 import { fadeIn, slideUp } from 'lib/keyframes';
 import { BoxWithClose } from 'modules/app/components/BoxWithClose';
+import { InternalLink } from 'modules/app/components/InternalLink';
 
 type Props = {
   isOpen: boolean;
@@ -46,17 +47,12 @@ export const CoreUnitModal = ({ isOpen, onDismiss }: Props): JSX.Element => {
               delegate, please be conscious of the potential impact of these divergent incentives. GovAlpha
               generally advises against delegating to CU members.{' '}
             </Text>
-            <ThemeUILink
-              href={'https://manual.gsuprotocol.io/delegation/overview/separation-of-powers'}
-              sx={{ mb: 3 }}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <InternalLink href={'/inprogress'} title="inprogress">
               <Text px={4} sx={{ textAlign: 'center', fontSize: 14, color: 'accentBlue' }}>
                 Read More
                 <Icon name="arrowTopRight" pt={2} color="accentBlue" />
               </Text>
-            </ThemeUILink>
+            </InternalLink>
             <Button onClick={onDismiss}>Close</Button>
           </Flex>
         </BoxWithClose>

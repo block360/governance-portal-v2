@@ -6,6 +6,7 @@ import CirclesBackground from '../CirclesBackground';
 import { InfoPoint, infoPoints } from './InfoPoints';
 import { useBreakpointIndex } from '@theme-ui/match-media';
 import { ViewMore } from '../ViewMore';
+import { CustomLink } from 'modules/app/components/CustomLink';
 
 function Card({
   infoPoint,
@@ -81,13 +82,9 @@ export default function InformationParticipateMakerGovernance(): React.ReactElem
               <Heading as="h2">How to participate in GSU protocol Governance</Heading>
             </Box>
             <Box>
-              <ExternalLink
-                href="https://manual.gsuprotocol.io/"
-                title="Learn more"
-                styles={{ color: 'inherit' }}
-              >
+              <CustomLink href="/inprogress" title="Learn more" styles={{ color: 'inherit' }}>
                 <ViewMore label="Learn More" />
-              </ExternalLink>
+              </CustomLink>
             </Box>
           </Flex>
 

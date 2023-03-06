@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Link as ThemeUILink, ThemeUIStyleObject } from 'theme-ui';
 
-type Props = {
+export type InternalLinkProps = {
   children: JSX.Element;
   href: string;
   title: string;
@@ -19,7 +19,7 @@ export const InternalLink = ({
   queryParams,
   hash,
   scroll = true
-}: Props): JSX.Element => (
+}: InternalLinkProps): JSX.Element => (
   <Link href={{ pathname: href, query: queryParams, hash }} scroll={scroll} passHref>
     <ThemeUILink variant="nostyle" title={title} sx={{ ...styles }}>
       {children}
