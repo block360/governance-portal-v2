@@ -1,4 +1,4 @@
-import { Text, Image, Flex, Heading, Container, Link as ExternalLink, Card } from 'theme-ui';
+import { Text, Image, Flex, Heading, Container, Card } from 'theme-ui';
 import Stack from 'modules/app/components/layout/layouts/Stack';
 import { ViewMore } from './ViewMore';
 import useSWR from 'swr';
@@ -18,9 +18,9 @@ const ForumPosts = ({ posts, bpi }: { posts: ForumPost[]; bpi: number }) => {
     <Flex sx={{ flexDirection: 'column', gap: 3 }}>
       <Flex sx={{ justifyContent: 'space-between' }}>
         <Heading>Browse the Governance Forum</Heading>
-        <ExternalLink href="https://forum.gsuprotocol.io/" title="View Forum Posts" target="_blank">
+        <InternalLink href="/inprogress" title="View Forum Posts">
           <ViewMore label="View Forum" />
-        </ExternalLink>
+        </InternalLink>
       </Flex>
       <Flex sx={{ gap: 3, justifyContent: 'space-between', flexWrap: 'wrap' }}>
         {posts.map(({ title, image, summary, link }) => {
@@ -54,9 +54,9 @@ const ForumPosts = ({ posts, bpi }: { posts: ForumPost[]; bpi: number }) => {
                       {summary}
                     </Text>
                   </Flex>
-                  <ExternalLink href={link} title="View Forum Post" target="_blank">
+                  <InternalLink href={link} title="View Forum Post">
                     <ViewMore label="Read More" />
-                  </ExternalLink>
+                  </InternalLink>
                 </Flex>
               </Flex>
             </Card>
