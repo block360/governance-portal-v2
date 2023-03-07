@@ -30,6 +30,7 @@ import { useVoteDelegateAddress } from 'modules/delegates/hooks/useVoteDelegateA
 import { ExternalLink } from 'modules/app/components/ExternalLink';
 import AccountSelect from 'modules/app/components/layout/header/AccountSelect';
 import { ClientRenderOnly } from 'modules/app/components/ClientRenderOnly';
+import { CustomLink } from 'modules/app/components/CustomLink';
 
 const AccountPage = (): React.ReactElement => {
   const bpi = useBreakpointIndex();
@@ -133,16 +134,11 @@ const AccountPage = (): React.ReactElement => {
                 {voteDelegateContractAddress && !modalOpen && (
                   <Box sx={{ mb: 2 }}>
                     <Label>FAQ</Label>
-                    <ExternalLink
-                      title="How can I verify my delegate contract?"
-                      href={
-                        'https://dux.makerdao.network/Verifying-a-delegate-contract-on-Etherscan-df677c604ac94911ae071fedc6a98ed2'
-                      }
-                    >
+                    <CustomLink title="How can I verify my delegate contract?" href={'/inprogress'}>
                       <Text as="p" sx={{ display: 'flex', alignItems: 'center' }}>
                         How can I verify my delegate contract? <Icon name="arrowTopRight" size={2} ml={2} />
                       </Text>
-                    </ExternalLink>
+                    </CustomLink>
                   </Box>
                 )}
                 {!voteDelegateContractAddress && (
